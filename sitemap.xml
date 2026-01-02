@@ -1,28 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Página principal -->
   <url>
-    <loc>https://adrianrs928222.github.io/STREAMDOMUS.NET/</loc>
+    <loc>https://www.streamdomus.net/</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Páginas SEO -->
+  <url>
+    <loc>https://www.streamdomus.net/servicio-premium.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://adrianrs928222.github.io/STREAMDOMUS.NET/iptv-estable-espana.html</loc>
+    <loc>https://www.streamdomus.net/soporte-directo.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://adrianrs928222.github.io/STREAMDOMUS.NET/iptv-sin-cortes.html</loc>
+    <loc>https://www.streamdomus.net/acceso-50-euros.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://adrianrs928222.github.io/STREAMDOMUS.NET/iptv-50-euros.html</loc>
+    <loc>https://www.streamdomus.net/hd-4k.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://adrianrs928222.github.io/STREAMDOMUS.NET/iptv-futbol-estable.html</loc>
-  </url>
-
-  <url>
-    <loc>https://adrianrs928222.github.io/STREAMDOMUS.NET/comprar-iptv.html</loc>
+    <loc>https://www.streamdomus.net/contratar-servicio.html</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>
