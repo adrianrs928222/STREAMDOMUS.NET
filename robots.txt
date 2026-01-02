@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://adrianrs928222.github.io/STREAMDOMUS.NET/sitemap.xml
