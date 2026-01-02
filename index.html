@@ -3,15 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>StreamDomus IPTV | Servicio IPTV Estable HD & 4K</title>
-<meta name="description" content="StreamDomus ofrece IPTV estable en España. Servicio premium HD & 4K con suscripción única de 50€. Soporte directo por WhatsApp y Telegram.">
+<title>StreamDomus | Servicio Digital Premium</title>
+<meta name="description" content="Servicio digital premium con soporte directo. Contacta por WhatsApp o Telegram para contratar.">
 <meta name="robots" content="index,follow">
-
-<!-- Open Graph -->
-<meta property="og:title" content="StreamDomus IPTV | Servicio IPTV Estable HD & 4K">
-<meta property="og:description" content="IPTV estable, servidores premium y soporte directo. Suscripción única 50€.">
-<meta property="og:type" content="website">
 
 <style>
 :root{
@@ -27,7 +21,6 @@
 }
 
 *{box-sizing:border-box}
-
 body{
   margin:0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -39,117 +32,69 @@ body{
   line-height:1.6;
 }
 
-.container{
-  max-width:980px;
-  margin:0 auto;
-  padding:22px;
-  text-align:center;
-}
-
-/* Top bar */
+.container{max-width:980px;margin:0 auto;padding:22px}
 .topbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:12px;
-  margin: 6px 0 18px;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  margin:6px 0 18px;
 }
-.brand{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  font-weight:900;
-  letter-spacing:.6px;
-}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.6px}
 .brandDot{
   width:12px;height:12px;border-radius:999px;
   background: linear-gradient(135deg, var(--accent), var(--accent2));
   box-shadow: 0 0 0 6px rgba(0,255,153,.08);
 }
 .miniTag{
-  font-size:.9rem;
-  color: var(--muted);
+  font-size:.9rem;color:var(--muted);
   border:1px solid var(--stroke);
-  padding:6px 10px;
-  border-radius:999px;
+  padding:6px 10px;border-radius:999px;
   background: rgba(255,255,255,.03);
   white-space:nowrap;
 }
 
-/* HERO / CARD */
 .hero{
   border:1px solid var(--stroke);
   background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   overflow:hidden;
+  text-align:center;
 }
 
 /* VIDEO */
-.videoBox{
-  width:100%;
-  background:#000;
-  border-bottom:1px solid var(--stroke);
-}
-.heroVideo{
-  width:100%;
-  height:auto;
-  display:block;
-  background:#000;
-}
+.videoBox{width:100%;background:#000;border-bottom:1px solid var(--stroke)}
+.heroVideo{width:100%;height:auto;display:block;background:#000}
 
 /* CONTENT */
-.heroContent{
-  padding: 18px 18px 6px;
-}
+.heroContent{padding:18px 18px 8px}
 h1{
-  font-size:clamp(30px, 3.4vw, 46px);
-  margin: 10px 0 10px;
+  font-size:clamp(30px,3.4vw,46px);
+  margin:10px 0 10px;
   line-height:1.15;
 }
-p{
-  margin:8px 0;
-  color:var(--muted);
-  font-size:1.05rem;
-}
+p{margin:8px 0;color:var(--muted);font-size:1.05rem}
 
 .badges{
-  margin: 16px 0 8px;
-  display:flex;
-  justify-content:center;
-  gap:10px;
-  flex-wrap:wrap;
+  margin:16px 0 8px;
+  display:flex;justify-content:center;gap:10px;flex-wrap:wrap;
 }
-.badgePrice{
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  padding: 10px 16px;
-  border-radius:999px;
-  border:1px solid rgba(0,255,153,.35);
-  background: rgba(0,255,153,.10);
-  color: var(--accent);
-  font-weight: 900;
-  font-size: 1.45rem;
-}
-.badgeNote{
-  display:inline-flex;
-  align-items:center;
-  padding: 10px 14px;
-  border-radius:999px;
+.badge{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:10px 14px;border-radius:999px;
   border:1px solid var(--stroke);
   background: rgba(255,255,255,.03);
   color: var(--muted);
-  font-weight: 800;
-  font-size: 1rem;
+  font-weight:800;
+}
+.badgeStrong{
+  border:1px solid rgba(0,255,153,.35);
+  background: rgba(0,255,153,.10);
+  color: var(--accent);
 }
 
 /* GRID */
 .grid{
-  display:grid;
-  gap:14px;
-  grid-template-columns: 1fr;
-  padding: 16px 18px 18px;
+  display:grid;gap:14px;grid-template-columns:1fr;
+  padding:16px 18px 18px;
 }
 @media (min-width: 900px){
   .grid{grid-template-columns: 1.12fr .88fr;}
@@ -158,30 +103,23 @@ p{
   border:1px solid var(--stroke);
   background: rgba(255,255,255,.03);
   border-radius: var(--radius);
-  padding: 16px;
+  padding:16px;
   text-align:left;
 }
-.card h2{
-  margin:0 0 10px;
-  font-size: 1.15rem;
-}
-ul{margin:0; padding:0 0 0 18px;}
-li{margin: 9px 0; color: var(--fg);}
+.card h2{margin:0 0 10px;font-size:1.15rem}
+ul{margin:0;padding:0 0 0 18px}
+li{margin:9px 0;color:var(--fg)}
 
-/* CTA */
-.ctaBox{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;}
+/* CTA buttons */
+.ctaBox{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
 .btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  padding: 12px 14px;
-  border-radius: 14px;
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:12px 14px;border-radius:14px;
   border:1px solid var(--stroke);
   background: rgba(255,255,255,.03);
   color: var(--fg);
   text-decoration:none;
-  font-weight: 900;
+  font-weight:900;
   width:100%;
 }
 .btn:hover{opacity:.93}
@@ -193,59 +131,32 @@ li{margin: 9px 0; color: var(--fg);}
   border:1px solid rgba(42,166,255,.35);
   background: rgba(42,166,255,.10);
 }
-.btn svg{width:20px; height:20px; fill:currentColor}
+.btn svg{width:20px;height:20px;fill:currentColor}
 
-/* Inline contact chips */
-.chips{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  margin: 10px 0 0;
-}
+/* Contact chips */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
 .chip{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  padding:8px 10px;
-  border-radius:999px;
+  display:inline-flex;align-items:center;gap:8px;
+  padding:8px 10px;border-radius:999px;
   border:1px solid var(--stroke);
   background: rgba(255,255,255,.03);
   color: rgba(255,255,255,.75);
-  font-weight:800;
-  font-size:.95rem;
+  font-weight:800;font-size:.95rem;
 }
 .chip svg{width:16px;height:16px;fill:rgba(255,255,255,.9)}
 
-/* SEO LINKS */
-.seoLinks{
-  padding: 0 18px 18px;
-  text-align:center;
-}
-.seoLinks a{
-  color: var(--accent);
-  text-decoration:none;
-  font-weight: 900;
-  margin: 0 8px;
-  white-space:nowrap;
-}
-
-/* Footer */
 footer{
-  margin: 18px 0 6px;
+  text-align:center;
+  margin:18px 0 6px;
   color: rgba(255,255,255,.55);
   font-size: .95rem;
 }
 
-/* FLOATING BUTTONS */
+/* Floating buttons */
 .floating{
-  position:fixed;
-  bottom:22px;
-  z-index:9999;
-  width:64px;
-  height:64px;
-  border-radius:999px;
-  display:grid;
-  place-items:center;
+  position:fixed;bottom:22px;z-index:9999;
+  width:64px;height:64px;border-radius:999px;
+  display:grid;place-items:center;
   box-shadow:0 16px 36px rgba(0,0,0,.6);
   border:1px solid rgba(255,255,255,.12);
   backdrop-filter: blur(6px);
@@ -256,94 +167,79 @@ footer{
 .floating svg{width:34px;height:34px;fill:#fff}
 .sr{position:absolute;left:-9999px}
 </style>
-
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"WebSite",
-  "name":"StreamDomus",
-  "description":"Servicio IPTV estable en España con suscripción única. HD & 4K y soporte directo por WhatsApp y Telegram.",
-  "inLanguage":"es"
-}
-</script>
 </head>
 
 <body>
   <div class="container">
-
     <div class="topbar">
       <div class="brand"><span class="brandDot"></span><span>STREAMDOMUS</span></div>
-      <div class="miniTag">Soporte directo · Activación rápida</div>
+      <div class="miniTag">Soporte directo · Respuesta rápida</div>
     </div>
 
     <section class="hero">
-
-      <!-- VIDEO (poster visible: preload="none") -->
+      <!-- Video hero (poster visible before play) -->
       <div class="videoBox">
         <video class="heroVideo"
                controls
                playsinline
                preload="none"
                poster="./assets/img/poster.png">
+          <!-- This is your main site video (you can keep your other Dropbox link here if you want) -->
           <source src="https://dl.dropboxusercontent.com/scl/fi/4gu20xvky6q4rtzmzj6d9/streamdomus_video.mp4?rlkey=edqd1uy19tpkbptlluvgayyfw" type="video/mp4">
           Tu navegador no soporta video HTML5.
         </video>
       </div>
 
       <div class="heroContent">
-        <h1>Servicio IPTV estable en España</h1>
-        <p>Canales, deportes, películas y series en <strong>HD & 4K</strong>. Servicio premium con estabilidad diaria y soporte real.</p>
+        <h1>Servicio digital premium con soporte directo</h1>
+        <p>
+          Atención rápida por WhatsApp o Telegram. Si quieres, te enviamos el vídeo explicativo dentro del chat con 1 clic.
+        </p>
 
         <div class="badges">
-          <div class="badgePrice">Suscripción única: 50€</div>
-          <div class="badgeNote">Sin pruebas · Servicio premium</div>
+          <div class="badge badgeStrong">Contratación directa</div>
+          <div class="badge">Sin formularios · Sin vueltas</div>
         </div>
-
-        <p style="margin-top:10px"><strong>Contratación directa</strong> por WhatsApp o Telegram. Atención rápida.</p>
       </div>
 
       <div class="grid">
         <div class="card">
-          <h2>Qué incluye</h2>
+          <h2>Qué obtienes</h2>
           <ul>
-            <li>✔ +20.000 canales internacionales</li>
-            <li>✔ Deportes y fútbol internacional</li>
-            <li>✔ Películas y series actualizadas</li>
-            <li>✔ Estabilidad diaria (anti-freeze)</li>
-            <li>✔ Compatible con Smart TV, Android, iOS, Fire Stick y PC</li>
-            <li>✔ Soporte directo y atención personalizada</li>
+            <li>✔ Servicio estable y soporte real</li>
+            <li>✔ Activación guiada paso a paso</li>
+            <li>✔ Atención directa por mensajería</li>
+            <li>✔ Explicación clara en vídeo</li>
           </ul>
         </div>
 
         <div class="card">
-          <h2>Cómo contratar</h2>
+          <h2>Contratar (te enviamos el vídeo en el chat)</h2>
           <p style="margin:0;color:var(--muted)">
-            Envía el mensaje: <strong>“Quiero la suscripción de 50€”</strong><br>
-            y te respondemos con los pasos de activación.
+            Pulsa el botón y se abrirá el chat con el mensaje preparado + el enlace del vídeo listo para compartir.
           </p>
 
-          <!-- BOTONES GRANDES (WhatsApp + Telegram) -->
+          <!-- Big CTA buttons with prefilled message INCLUDING your chosen video link -->
           <div class="ctaBox">
             <a class="btn btnPrimary"
-               href="https://wa.me/34642425345?text=Hola%20quiero%20contratar%20la%20suscripción%20IPTV%20de%2050€"
-               target="_blank" rel="noopener">
+               target="_blank" rel="noopener"
+               href="https://wa.me/34642425345?text=Hola%2C%20quiero%20contratar%20StreamDomus.%0A%0AV%C3%ADdeo%20explicativo%20(abrir%20y%20reproducir)%3A%0Ahttps%3A%2F%2Fdl.dropboxusercontent.com%2Fscl%2Ffi%2F2sasihwqi043alfzm03kt%2Fvideo.mp4%3Frlkey%3Dwdq18xy0t8ao7ikxswah6ku5m">
               <svg viewBox="0 0 16 16" aria-hidden="true">
                 <path d="M13.601 2.326A7.85 7.85 0 0 0 8.02.003C3.62.003.06 3.563.06 7.963c0 1.404.366 2.775 1.063 3.992L0 16l4.13-1.084a7.94 7.94 0 0 0 3.89 1.002h.003c4.4 0 7.96-3.56 7.96-7.96a7.9 7.9 0 0 0-2.382-5.632z"/>
               </svg>
-              Contratar por WhatsApp
+              WhatsApp (enviar vídeo)
             </a>
 
             <a class="btn btnSecondary"
-               href="https://t.me/adrianrs92822"
-               target="_blank" rel="noopener">
+               target="_blank" rel="noopener"
+               href="https://t.me/share/url?url=https%3A%2F%2Fdl.dropboxusercontent.com%2Fscl%2Ffi%2F2sasihwqi043alfzm03kt%2Fvideo.mp4%3Frlkey%3Dwdq18xy0t8ao7ikxswah6ku5m&text=Hola%2C%20quiero%20contratar%20StreamDomus.%0A%0AV%C3%ADdeo%20explicativo%3A">
               <svg viewBox="0 0 16 16" aria-hidden="true">
                 <path d="M16 3.038a2 2 0 0 0-2.78-1.86L1.4 5.692a2 2 0 0 0 .08 3.78l3.13 1.09 1.2 3.88a1 1 0 0 0 1.63.46l1.93-1.87 3.78 2.78a2 2 0 0 0 3.16-1.1L16 3.038z"/>
               </svg>
-              Contratar por Telegram
+              Telegram (enviar vídeo)
             </a>
           </div>
 
-          <!-- IDENTIFICADORES (encaje argumental / confianza) -->
           <div class="chips" aria-label="Contacto">
             <div class="chip">
               <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.601 2.326A7.85 7.85 0 0 0 8.02.003C3.62.003.06 3.563.06 7.963c0 1.404.366 2.775 1.063 3.992L0 16l4.13-1.084a7.94 7.94 0 0 0 3.89 1.002h.003c4.4 0 7.96-3.56 7.96-7.96a7.9 7.9 0 0 0-2.382-5.632z"/></svg>
@@ -356,31 +252,22 @@ footer{
           </div>
 
           <p style="margin:12px 0 0;color:rgba(255,255,255,.55);font-size:.95rem">
-            Sin pruebas. Servicio orientado a calidad y estabilidad.
+            Nota: por privacidad, las apps no permiten adjuntar vídeos automáticamente desde un botón web. Aquí se envía el enlace listo para abrir y reproducir.
           </p>
         </div>
       </div>
-
-      <div class="seoLinks">
-        <a href="iptv-estable-espana.html">IPTV estable</a> ·
-        <a href="iptv-sin-cortes.html">IPTV sin cortes</a> ·
-        <a href="iptv-50-euros.html">IPTV 50€</a> ·
-        <a href="iptv-futbol-estable.html">IPTV fútbol</a> ·
-        <a href="comprar-iptv.html">Comprar IPTV</a>
-      </div>
-
     </section>
 
     <footer>
       © <span id="y"></span> StreamDomus · Atención directa por WhatsApp/Telegram
     </footer>
-
   </div>
 
   <!-- Floating WhatsApp -->
   <a class="floating whatsapp"
-     href="https://wa.me/34642425345?text=Hola%20quiero%20contratar%20la%20suscripción%20IPTV%20de%2050€"
-     target="_blank" rel="noopener" aria-label="WhatsApp">
+     target="_blank" rel="noopener"
+     href="https://wa.me/34642425345?text=Hola%2C%20quiero%20contratar%20StreamDomus.%0A%0AV%C3%ADdeo%20explicativo%3A%0Ahttps%3A%2F%2Fdl.dropboxusercontent.com%2Fscl%2Ffi%2F2sasihwqi043alfzm03kt%2Fvideo.mp4%3Frlkey%3Dwdq18xy0t8ao7ikxswah6ku5m"
+     aria-label="WhatsApp">
     <span class="sr">WhatsApp</span>
     <svg viewBox="0 0 16 16" aria-hidden="true">
       <path d="M13.601 2.326A7.85 7.85 0 0 0 8.02.003C3.62.003.06 3.563.06 7.963c0 1.404.366 2.775 1.063 3.992L0 16l4.13-1.084a7.94 7.94 0 0 0 3.89 1.002h.003c4.4 0 7.96-3.56 7.96-7.96a7.9 7.9 0 0 0-2.382-5.632z"/>
@@ -389,8 +276,9 @@ footer{
 
   <!-- Floating Telegram -->
   <a class="floating telegram"
-     href="https://t.me/adrianrs92822"
-     target="_blank" rel="noopener" aria-label="Telegram">
+     target="_blank" rel="noopener"
+     href="https://t.me/share/url?url=https%3A%2F%2Fdl.dropboxusercontent.com%2Fscl%2Ffi%2F2sasihwqi043alfzm03kt%2Fvideo.mp4%3Frlkey%3Dwdq18xy0t8ao7ikxswah6ku5m&text=Hola%2C%20quiero%20contratar%20StreamDomus.%0A%0AV%C3%ADdeo%20explicativo%3A"
+     aria-label="Telegram">
     <span class="sr">Telegram</span>
     <svg viewBox="0 0 16 16" aria-hidden="true">
       <path d="M16 3.038a2 2 0 0 0-2.78-1.86L1.4 5.692a2 2 0 0 0 .08 3.78l3.13 1.09 1.2 3.88a1 1 0 0 0 1.63.46l1.93-1.87 3.78 2.78a2 2 0 0 0 3.16-1.1L16 3.038z"/>
