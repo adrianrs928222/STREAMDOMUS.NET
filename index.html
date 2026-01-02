@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>StreamDomus IPTV | Suscripción única 50€</title>
+  <meta name="description" content="IPTV estable en España. Suscripción única 50€. HD & 4K. Soporte directo por WhatsApp y Telegram. Sin pruebas." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="StreamDomus IPTV | Suscripción única 50€" />
+  <meta property="og:description" content="IPTV estable en España. Pago único 50€. Soporte WhatsApp y Telegram. Sin pruebas." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg:#000;
+      --fg:#fff;
+      --muted:#cfcfcf;
+      --accent:#00ff99;
+      --card:#0b0b0b;
+      --stroke:#1f1f1f;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:var(--bg);
+      color:var(--fg);
+      line-height:1.6;
+    }
+    .wrap{
+      max-width:980px;
+      margin:0 auto;
+      padding:20px;
+      text-align:center;
+    }
+    .hero{
+      margin-top:16px;
+      background:linear-gradient(180deg, rgba(0,255,153,.08), transparent 50%);
+      border:1px solid var(--stroke);
+      border-radius:16px;
+      padding:16px;
+    }
+    h1{font-size:clamp(26px, 3.2vw, 40px); margin:14px 0 8px;}
+    p{margin:10px 0; color:var(--muted); font-size:1.05rem;}
+    .price{
+      margin:14px auto 10px;
+      display:inline-block;
+      padding:10px 16px;
+      border:1px solid rgba(0,255,153,.35);
+      border-radius:999px;
+      color:var(--accent);
+      font-weight:800;
+      font-size:1.5rem;
+      background:rgba(0,255,153,.06);
+    }
+    .grid{
+      display:grid;
+      gap:12px;
+      grid-template-columns:1fr;
+      margin:18px 0 6px;
+    }
+    @media (min-width: 820px){
+      .grid{grid-template-columns:1.2fr .8fr}
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--stroke);
+      border-radius:16px;
+      padding:14px;
+      text-align:left;
+    }
+    .list{margin:0; padding:0 0 0 18px; color:var(--fg)}
+    .list li{margin:8px 0}
+    .note{
+      color:var(--muted);
+      font-size:.98rem;
+    }
+    .links{
+      margin:14px 0 30px;
+      font-size:1rem;
+    }
+    .links a{
+      color:var(--accent);
+      text-decoration:none;
+      margin:0 10px;
+      font-weight:650;
+    }
+    .links a:hover{opacity:.85}
+
+    /* Video responsive: dos videos, uno se muestra según pantalla */
+    .videoBox{
+      border:1px solid var(--stroke);
+      border-radius:14px;
+      overflow:hidden;
+      background:#000;
+    }
+    video{width:100%; height:auto; display:block}
+    .video-desktop{display:none}
+    .video-mobile{display:block}
+    @media (min-width: 768px){
+      .video-desktop{display:block}
+      .video-mobile{display:none}
+    }
+
+    /* Floating buttons */
+    .float{
+      position:fixed;
+      bottom:18px;
+      z-index:9999;
+      width:62px;height:62px;
+      border-radius:999px;
+      display:grid;place-items:center;
+      box-shadow:0 12px 30px rgba(0,0,0,.45);
+      border:1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
+    .float svg{width:32px;height:32px}
+    .wa{right:18px; background:rgba(37,211,102,.18)}
+    .tg{left:18px; background:rgba(34,158,217,.18)}
+    .float:hover{transform:translateY(-2px)}
+    .sr{position:absolute;left:-9999px}
+  </style>
+
+  <!-- JSON-LD básico (no se mete en líos, ayuda SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"StreamDomus",
+    "description":"IPTV estable en España. Suscripción única 50€. Soporte WhatsApp y Telegram.",
+    "inLanguage":"es"
+  }
+  </script>
+</head>
+
+<body>
+  <main class="wrap">
+
+    <section class="hero">
+      <div class="videoBox">
+        <!-- Desktop video -->
+        <video class="video-desktop" autoplay muted loop playsinline preload="metadata">
+          <source src="assets/video/streamdomus_web.mp4" type="video/mp4">
+        </video>
+        <!-- Mobile video -->
+        <video class="video-mobile" autoplay muted loop playsinline preload="metadata">
+          <source src="assets/video/streamdomus_movil.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <h1>IPTV estable en España – StreamDomus</h1>
+      <p>Canales, deportes, películas y series en <strong>HD & 4K</strong>. Servicio estable, soporte real.</p>
+      <div class="price">Suscripción única: 50€</div>
+      <p class="note"><strong>Sin pruebas.</strong> Diseñado para clientes que buscan calidad y estabilidad.</p>
+
+      <div class="grid">
+        <div class="card">
+          <h2 style="margin:0 0 10px;font-size:1.2rem;">Qué incluye</h2>
+          <ul class="list">
+            <li>+20.000 canales</li>
+            <li>Deportes y fútbol internacional</li>
+            <li>Películas y series actualizadas</li>
+            <li>Sistema anti-freeze y servidores premium</li>
+            <li>Compatible con Smart TV, Android, iOS, Fire Stick y PC</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2 style="margin:0 0 10px;font-size:1.2rem;">Cómo contratar</h2>
+          <p style="margin:0;color:var(--muted);">
+            Contacto exclusivo por WhatsApp o Telegram.<br>
+            Activación rápida tras confirmar la suscripción.
+          </p>
+          <p style="margin:12px 0 0;color:var(--muted);">
+            Consejo: escribe “<strong>Quiero la suscripción de 50€</strong>”.
+          </p>
+        </div>
+      </div>
+
+      <div class="links">
+        <a href="iptv-estable-espana.html">IPTV estable</a>
+        <a href="iptv-sin-cortes.html">IPTV sin cortes</a>
+        <a href="iptv-50-euros.html">IPTV 50€</a>
+        <a href="iptv-futbol-estable.html">IPTV fútbol</a>
+        <a href="comprar-iptv.html">Comprar IPTV</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- WhatsApp Floating -->
+  <a class="float wa" href="https://wa.me/34642425345?text=Hola%20quiero%20contratar%20la%20suscripción%20IPTV%20de%2050€" target="_blank" rel="noopener">
+    <span class="sr">WhatsApp</span>
+    <!-- Bootstrap Icons - whatsapp -->
+    <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" style="color:#fff">
+      <path d="M13.601 2.326A7.85 7.85 0 0 0 8.02.003C3.62.003.06 3.563.06 7.963c0 1.404.366 2.775 1.063 3.992L0 16l4.13-1.084a7.94 7.94 0 0 0 3.89 1.002h.003c4.4 0 7.96-3.56 7.96-7.96a7.9 7.9 0 0 0-2.382-5.632zM8.02 14.6a6.6 6.6 0 0 1-3.37-.93l-.242-.144-2.45.642.654-2.386-.158-.245a6.57 6.57 0 1 1 5.566 3.063zm3.61-4.93c-.196-.098-1.16-.572-1.34-.637-.18-.066-.312-.098-.444.098-.132.196-.51.637-.624.77-.114.132-.23.148-.426.05-.196-.098-.828-.305-1.578-.973-.584-.52-.978-1.16-1.092-1.356-.114-.196-.012-.302.086-.4.088-.088.196-.23.294-.344.098-.114.132-.196.196-.328.066-.132.033-.246-.016-.344-.05-.098-.444-1.07-.61-1.466-.16-.384-.323-.332-.444-.338l-.378-.007c-.132 0-.344.05-.524.246-.18.196-.688.672-.688 1.64 0 .97.706 1.907.804 2.04.098.132 1.39 2.12 3.37 2.972.47.202.84.322 1.126.412.474.15.905.128 1.246.078.38-.056 1.16-.474 1.324-.932.164-.458.164-.85.114-.932-.05-.082-.18-.132-.378-.23z"/>
+    </svg>
+  </a>
+
+  <!-- Telegram Floating -->
+  <a class="float tg" href="https://t.me/adrianrs9282" target="_blank" rel="noopener">
+    <span class="sr">Telegram</span>
+    <!-- Bootstrap Icons - telegram -->
+    <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" style="color:#fff">
+      <path d="M16 3.038a2 2 0 0 0-2.78-1.86L1.4 5.692a2 2 0 0 0 .08 3.78l3.13 1.09 1.2 3.88a1 1 0 0 0 1.63.46l1.93-1.87 3.78 2.78a2 2 0 0 0 3.16-1.1L16 3.038zM5.75 9.33l7.9-4.85c.12-.07.25.09.15.2l-6.54 6.22-.24 2.48-1.09-3.52-2.96-1.03c-.2-.07-.2-.35 0-.43l10.72-4.16-8.94 5.49z"/>
+    </svg>
+  </a>
+
+</body>
+</html>
