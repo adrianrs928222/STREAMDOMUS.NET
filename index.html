@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>StreamDomus | Servicio Digital Premium</title>
-<meta name="description" content="Servicio digital premium con soporte directo. Contacta por WhatsApp o Telegram para contratar.">
+<title>StreamDomus | Servicio digital premium</title>
+<meta name="description" content="Servicio digital premium con atención directa. Contacto rápido por WhatsApp y Telegram.">
 <meta name="robots" content="index,follow">
 
 <style>
@@ -19,11 +19,10 @@
   --radius:18px;
   --shadow:0 20px 45px rgba(0,0,0,.55);
 }
-
 *{box-sizing:border-box}
 body{
   margin:0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
   background:
     radial-gradient(900px 500px at 50% 0%, rgba(0,255,153,.08), transparent 55%),
     radial-gradient(900px 500px at 90% 10%, rgba(42,166,255,.08), transparent 55%),
@@ -31,136 +30,62 @@ body{
   color:var(--fg);
   line-height:1.6;
 }
-
 .container{max-width:980px;margin:0 auto;padding:22px}
-.topbar{
-  display:flex;justify-content:space-between;align-items:center;gap:12px;
-  margin:6px 0 18px;
-}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:6px 0 18px}
 .brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.6px}
-.brandDot{
-  width:12px;height:12px;border-radius:999px;
-  background: linear-gradient(135deg, var(--accent), var(--accent2));
-  box-shadow: 0 0 0 6px rgba(0,255,153,.08);
-}
-.miniTag{
-  font-size:.9rem;color:var(--muted);
-  border:1px solid var(--stroke);
-  padding:6px 10px;border-radius:999px;
-  background: rgba(255,255,255,.03);
-  white-space:nowrap;
-}
+.brandDot{width:12px;height:12px;border-radius:999px;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 0 0 6px rgba(0,255,153,.08)}
+.miniTag{font-size:.9rem;color:var(--muted);border:1px solid var(--stroke);padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.03)}
 
 .hero{
   border:1px solid var(--stroke);
-  background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
   overflow:hidden;
   text-align:center;
 }
 
-/* VIDEO */
+/* Video */
 .videoBox{width:100%;background:#000;border-bottom:1px solid var(--stroke)}
 .heroVideo{width:100%;height:auto;display:block;background:#000}
 
-/* CONTENT */
-.heroContent{padding:18px 18px 8px}
-h1{
-  font-size:clamp(30px,3.4vw,46px);
-  margin:10px 0 10px;
-  line-height:1.15;
-}
+/* Content */
+.heroContent{padding:18px}
+h1{font-size:clamp(30px,3.4vw,46px);margin:10px 0;line-height:1.15}
 p{margin:8px 0;color:var(--muted);font-size:1.05rem}
 
-.badges{
-  margin:16px 0 8px;
-  display:flex;justify-content:center;gap:10px;flex-wrap:wrap;
-}
-.badge{
-  display:inline-flex;align-items:center;gap:10px;
-  padding:10px 14px;border-radius:999px;
-  border:1px solid var(--stroke);
-  background: rgba(255,255,255,.03);
-  color: var(--muted);
-  font-weight:800;
-}
-.badgeStrong{
-  border:1px solid rgba(0,255,153,.35);
-  background: rgba(0,255,153,.10);
-  color: var(--accent);
-}
+.badges{margin:16px 0;display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.badge{padding:10px 14px;border-radius:999px;border:1px solid var(--stroke);background:rgba(255,255,255,.03);color:var(--muted);font-weight:800}
+.badgeStrong{border:1px solid rgba(0,255,153,.35);background:rgba(0,255,153,.10);color:var(--accent)}
 
-/* GRID */
-.grid{
-  display:grid;gap:14px;grid-template-columns:1fr;
-  padding:16px 18px 18px;
-}
-@media (min-width: 900px){
-  .grid{grid-template-columns: 1.12fr .88fr;}
-}
-.card{
-  border:1px solid var(--stroke);
-  background: rgba(255,255,255,.03);
-  border-radius: var(--radius);
-  padding:16px;
-  text-align:left;
-}
+.grid{display:grid;gap:14px;grid-template-columns:1fr;padding:16px 18px}
+@media(min-width:900px){.grid{grid-template-columns:1.12fr .88fr}}
+.card{border:1px solid var(--stroke);background:rgba(255,255,255,.03);border-radius:var(--radius);padding:16px;text-align:left}
 .card h2{margin:0 0 10px;font-size:1.15rem}
 ul{margin:0;padding:0 0 0 18px}
-li{margin:9px 0;color:var(--fg)}
+li{margin:9px 0}
 
-/* CTA buttons */
 .ctaBox{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  padding:12px 14px;border-radius:14px;
-  border:1px solid var(--stroke);
-  background: rgba(255,255,255,.03);
-  color: var(--fg);
-  text-decoration:none;
-  font-weight:900;
-  width:100%;
+  padding:12px 14px;border-radius:14px;border:1px solid var(--stroke);
+  background:rgba(255,255,255,.03);color:var(--fg);text-decoration:none;font-weight:900;width:100%
 }
-.btn:hover{opacity:.93}
-.btnPrimary{
-  border:1px solid rgba(0,255,153,.35);
-  background: rgba(0,255,153,.12);
-}
-.btnSecondary{
-  border:1px solid rgba(42,166,255,.35);
-  background: rgba(42,166,255,.10);
-}
+.btnPrimary{border:1px solid rgba(0,255,153,.35);background:rgba(0,255,153,.12)}
+.btnSecondary{border:1px solid rgba(42,166,255,.35);background:rgba(42,166,255,.10)}
 .btn svg{width:20px;height:20px;fill:currentColor}
 
-/* Contact chips */
 .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-.chip{
-  display:inline-flex;align-items:center;gap:8px;
-  padding:8px 10px;border-radius:999px;
-  border:1px solid var(--stroke);
-  background: rgba(255,255,255,.03);
-  color: rgba(255,255,255,.75);
-  font-weight:800;font-size:.95rem;
-}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:999px;border:1px solid var(--stroke);background:rgba(255,255,255,.03);color:rgba(255,255,255,.75);font-weight:800;font-size:.95rem}
 .chip svg{width:16px;height:16px;fill:rgba(255,255,255,.9)}
 
-footer{
-  text-align:center;
-  margin:18px 0 6px;
-  color: rgba(255,255,255,.55);
-  font-size: .95rem;
-}
+footer{text-align:center;margin:18px 0 6px;color:rgba(255,255,255,.55);font-size:.95rem}
 
 /* Floating buttons */
 .floating{
-  position:fixed;bottom:22px;z-index:9999;
-  width:64px;height:64px;border-radius:999px;
-  display:grid;place-items:center;
-  box-shadow:0 16px 36px rgba(0,0,0,.6);
-  border:1px solid rgba(255,255,255,.12);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  position:fixed;bottom:22px;z-index:9999;width:64px;height:64px;border-radius:999px;
+  display:grid;place-items:center;box-shadow:0 16px 36px rgba(0,0,0,.6);
+  border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(6px)
 }
 .whatsapp{right:22px;background:rgba(37,211,102,.28)}
 .telegram{left:22px;background:rgba(34,158,217,.28)}
@@ -170,123 +95,93 @@ footer{
 </head>
 
 <body>
-  <div class="container">
-    <div class="topbar">
-      <div class="brand"><span class="brandDot"></span><span>STREAMDOMUS</span></div>
-      <div class="miniTag">Soporte directo · Respuesta rápida</div>
-    </div>
-
-    <section class="hero">
-      <!-- Video hero (poster visible before play) -->
-      <div class="videoBox">
-        <video class="heroVideo"
-               controls
-               playsinline
-               preload="none"
-               poster="./assets/img/poster.png">
-          <!-- This is your main site video (you can keep your other Dropbox link here if you want) -->
-          <source src="https://dl.dropboxusercontent.com/scl/fi/4gu20xvky6q4rtzmzj6d9/streamdomus_video.mp4?rlkey=edqd1uy19tpkbptlluvgayyfw" type="video/mp4">
-          Tu navegador no soporta video HTML5.
-        </video>
-      </div>
-
-      <div class="heroContent">
-        <h1>Servicio digital premium con soporte directo</h1>
-        <p>
-          Atención rápida por WhatsApp o Telegram. Si quieres, te enviamos el vídeo explicativo dentro del chat con 1 clic.
-        </p>
-
-        <div class="badges">
-          <div class="badge badgeStrong">Contratación directa</div>
-          <div class="badge">Sin formularios · Sin vueltas</div>
-        </div>
-      </div>
-
-      <div class="grid">
-        <div class="card">
-          <h2>Qué obtienes</h2>
-          <ul>
-            <li>✔ Servicio estable y soporte real</li>
-            <li>✔ Activación guiada paso a paso</li>
-            <li>✔ Atención directa por mensajería</li>
-            <li>✔ Explicación clara en vídeo</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h2>Contratar (te enviamos el vídeo en el chat)</h2>
-          <p style="margin:0;color:var(--muted)">
-            Pulsa el botón y se abrirá el chat con el mensaje preparado + el enlace del vídeo listo para compartir.
-          </p>
-
-          <!-- Big CTA buttons with prefilled message INCLUDING your chosen video link -->
-          <div class="ctaBox">
-            <a class="btn btnPrimary"
-               target="_blank" rel="noopener"
-               href="https://wa.me/34642425345?text=Hola%2C%20quiero%20contratar%20StreamDomus.%0A%0AV%C3%ADdeo%20explicativo%20(abrir%20y%20reproducir)%3A%0Ahttps%3A%2F%2Fdl.dropboxusercontent.com%2Fscl%2Ffi%2F2sasihwqi043alfzm03kt%2Fvideo.mp4%3Frlkey%3Dwdq18xy0t8ao7ikxswah6ku5m">
-              <svg viewBox="0 0 16 16" aria-hidden="true">
-                <path d="M13.601 2.326A7.85 7.85 0 0 0 8.02.003C3.62.003.06 3.563.06 7.963c0 1.404.366 2.775 1.063 3.992L0 16l4.13-1.084a7.94 7.94 0 0 0 3.89 1.002h.003c4.4 0 7.96-3.56 7.96-7.96a7.9 7.9 0 0 0-2.382-5.632z"/>
-              </svg>
-              WhatsApp (enviar vídeo)
-            </a>
-
-            <a class="btn btnSecondary"
-               target="_blank" rel="noopener"
-               href="https://t.me/share/url?url=https%3A%2F%2Fdl.dropboxusercontent.com%2Fscl%2Ffi%2F2sasihwqi043alfzm03kt%2Fvideo.mp4%3Frlkey%3Dwdq18xy0t8ao7ikxswah6ku5m&text=Hola%2C%20quiero%20contratar%20StreamDomus.%0A%0AV%C3%ADdeo%20explicativo%3A">
-              <svg viewBox="0 0 16 16" aria-hidden="true">
-                <path d="M16 3.038a2 2 0 0 0-2.78-1.86L1.4 5.692a2 2 0 0 0 .08 3.78l3.13 1.09 1.2 3.88a1 1 0 0 0 1.63.46l1.93-1.87 3.78 2.78a2 2 0 0 0 3.16-1.1L16 3.038z"/>
-              </svg>
-              Telegram (enviar vídeo)
-            </a>
-          </div>
-
-          <div class="chips" aria-label="Contacto">
-            <div class="chip">
-              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.601 2.326A7.85 7.85 0 0 0 8.02.003C3.62.003.06 3.563.06 7.963c0 1.404.366 2.775 1.063 3.992L0 16l4.13-1.084a7.94 7.94 0 0 0 3.89 1.002h.003c4.4 0 7.96-3.56 7.96-7.96a7.9 7.9 0 0 0-2.382-5.632z"/></svg>
-              +34 642 425 345
-            </div>
-            <div class="chip">
-              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M16 3.038a2 2 0 0 0-2.78-1.86L1.4 5.692a2 2 0 0 0 .08 3.78l3.13 1.09 1.2 3.88a1 1 0 0 0 1.63.46l1.93-1.87 3.78 2.78a2 2 0 0 0 3.16-1.1L16 3.038z"/></svg>
-              @adrianrs92822
-            </div>
-          </div>
-
-          <p style="margin:12px 0 0;color:rgba(255,255,255,.55);font-size:.95rem">
-            Nota: por privacidad, las apps no permiten adjuntar vídeos automáticamente desde un botón web. Aquí se envía el enlace listo para abrir y reproducir.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      © <span id="y"></span> StreamDomus · Atención directa por WhatsApp/Telegram
-    </footer>
+<div class="container">
+  <div class="topbar">
+    <div class="brand"><span class="brandDot"></span><span>STREAMDOMUS</span></div>
+    <div class="miniTag">Soporte directo · Respuesta rápida</div>
   </div>
 
-  <!-- Floating WhatsApp -->
-  <a class="floating whatsapp"
-     target="_blank" rel="noopener"
-     href="https://wa.me/34642425345?text=Hola%2C%20quiero%20contratar%20StreamDomus.%0A%0AV%C3%ADdeo%20explicativo%3A%0Ahttps%3A%2F%2Fdl.dropboxusercontent.com%2Fscl%2Ffi%2F2sasihwqi043alfzm03kt%2Fvideo.mp4%3Frlkey%3Dwdq18xy0t8ao7ikxswah6ku5m"
-     aria-label="WhatsApp">
-    <span class="sr">WhatsApp</span>
-    <svg viewBox="0 0 16 16" aria-hidden="true">
-      <path d="M13.601 2.326A7.85 7.85 0 0 0 8.02.003C3.62.003.06 3.563.06 7.963c0 1.404.366 2.775 1.063 3.992L0 16l4.13-1.084a7.94 7.94 0 0 0 3.89 1.002h.003c4.4 0 7.96-3.56 7.96-7.96a7.9 7.9 0 0 0-2.382-5.632z"/>
-    </svg>
-  </a>
+  <section class="hero">
+    <!-- VIDEO HERO -->
+    <div class="videoBox">
+      <video class="heroVideo" controls playsinline preload="none" poster="./assets/img/poster.png">
+        <source src="https://dl.dropboxusercontent.com/scl/fi/4gu20xvky6q4rtzmzj6d9/streamdomus_video.mp4" type="video/mp4">
+        Tu navegador no soporta video HTML5.
+      </video>
+    </div>
 
-  <!-- Floating Telegram -->
-  <a class="floating telegram"
-     target="_blank" rel="noopener"
-     href="https://t.me/share/url?url=https%3A%2F%2Fdl.dropboxusercontent.com%2Fscl%2Ffi%2F2sasihwqi043alfzm03kt%2Fvideo.mp4%3Frlkey%3Dwdq18xy0t8ao7ikxswah6ku5m&text=Hola%2C%20quiero%20contratar%20StreamDomus.%0A%0AV%C3%ADdeo%20explicativo%3A"
-     aria-label="Telegram">
-    <span class="sr">Telegram</span>
-    <svg viewBox="0 0 16 16" aria-hidden="true">
-      <path d="M16 3.038a2 2 0 0 0-2.78-1.86L1.4 5.692a2 2 0 0 0 .08 3.78l3.13 1.09 1.2 3.88a1 1 0 0 0 1.63.46l1.93-1.87 3.78 2.78a2 2 0 0 0 3.16-1.1L16 3.038z"/>
-    </svg>
-  </a>
+    <div class="heroContent">
+      <h1>Servicio digital premium con atención directa</h1>
+      <p>Contacta por WhatsApp o Telegram. Te enviamos el vídeo explicativo listo para reproducir.</p>
+      <div class="badges">
+        <div class="badge badgeStrong">Contacto directo</div>
+        <div class="badge">Sin formularios</div>
+      </div>
+    </div>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+    <div class="grid">
+      <div class="card">
+        <h2>Cómo funciona</h2>
+        <ul>
+          <li>✔ Información clara y directa</li>
+          <li>✔ Vídeo explicativo</li>
+          <li>✔ Atención personalizada</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Enviar el vídeo por chat</h2>
+        <p>El mensaje se abre con la explicación arriba y el saludo abajo.</p>
+
+        <!-- MENSAJES ORDENADOS: EXPLICACIÓN ARRIBA / SALUDO ABAJO -->
+        <div class="ctaBox">
+          <!-- WhatsApp -->
+          <a class="btn btnPrimary" target="_blank" rel="noopener"
+             href="https://wa.me/34642425345?text=Vídeo%20explicativo%20del%20servicio%20StreamDomus%20(abrir%20y%20reproducir)%3A%0Ahttps%3A%2F%2Fdl.dropboxusercontent.com%2Fscl%2Ffi%2F2sasihwqi043alfzm03kt%2Fvideo.mp4%3Frlkey%3Dwdq18xy0t8ao7ikxswah6ku5m%0A%0AHola%2C%20quiero%20más%20información.">
+            WhatsApp
+          </a>
+
+          <!-- Telegram -->
+          <a class="btn btnSecondary" target="_blank" rel="noopener"
+             href="https://t.me/share/url?url=https%3A%2F%2Fdl.dropboxusercontent.com%2Fscl%2Ffi%2F2sasihwqi043alfzm03kt%2Fvideo.mp4%3Frlkey%3Dwdq18xy0t8ao7ikxswah6ku5m&text=Vídeo%20explicativo%20del%20servicio%20StreamDomus.%0A%0AHola%2C%20quiero%20más%20información.">
+            Telegram
+          </a>
+        </div>
+
+        <div class="chips">
+          <div class="chip">
+            <svg viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 8.02.003C3.62.003.06 3.563.06 7.963c0 1.404.366 2.775 1.063 3.992L0 16l4.13-1.084a7.94 7.94 0 0 0 3.89 1.002h.003c4.4 0 7.96-3.56 7.96-7.96a7.9 7.9 0 0 0-2.382-5.632z"/></svg>
+            +34 642 425 345
+          </div>
+          <div class="chip">
+            <svg viewBox="0 0 16 16"><path d="M16 3.038a2 2 0 0 0-2.78-1.86L1.4 5.692a2 2 0 0 0 .08 3.78l3.13 1.09 1.2 3.88a1 1 0 0 0 1.63.46l1.93-1.87 3.78 2.78a2 2 0 0 0 3.16-1.1L16 3.038z"/></svg>
+            @adrianrs92822
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="y"></span> StreamDomus · Atención directa
+  </footer>
+</div>
+
+<!-- Floating buttons -->
+<a class="floating whatsapp" target="_blank" rel="noopener"
+   href="https://wa.me/34642425345?text=Vídeo%20explicativo%3A%0Ahttps%3A%2F%2Fdl.dropboxusercontent.com%2Fscl%2Ffi%2F2sasihwqi043alfzm03kt%2Fvideo.mp4%3Frlkey%3Dwdq18xy0t8ao7ikxswah6ku5m%0A%0AHola%2C%20quiero%20más%20información.">
+  <span class="sr">WhatsApp</span>
+  <svg viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 8.02.003C3.62.003.06 3.563.06 7.963c0 1.404.366 2.775 1.063 3.992L0 16l4.13-1.084a7.94 7.94 0 0 0 3.89 1.002h.003c4.4 0 7.96-3.56 7.96-7.96a7.9 7.9 0 0 0-2.382-5.632z"/></svg>
+</a>
+
+<a class="floating telegram" target="_blank" rel="noopener"
+   href="https://t.me/share/url?url=https%3A%2F%2Fdl.dropboxusercontent.com%2Fscl%2Ffi%2F2sasihwqi043alfzm03kt%2Fvideo.mp4%3Frlkey%3Dwdq18xy0t8ao7ikxswah6ku5m&text=Vídeo%20explicativo.%0A%0AHola%2C%20quiero%20más%20información.">
+  <span class="sr">Telegram</span>
+  <svg viewBox="0 0 16 16"><path d="M16 3.038a2 2 0 0 0-2.78-1.86L1.4 5.692a2 2 0 0 0 .08 3.78l3.13 1.09 1.2 3.88a1 1 0 0 0 1.63.46l1.93-1.87 3.78 2.78a2 2 0 0 0 3.16-1.1L16 3.038z"/></svg>
+</a>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
