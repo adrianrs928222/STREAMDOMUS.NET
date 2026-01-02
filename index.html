@@ -4,9 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>StreamDomus IPTV | Suscripción única 50€</title>
-<meta name="description" content="IPTV estable en España. Suscripción única 50€. HD & 4K. Soporte directo por WhatsApp y Telegram. Sin pruebas.">
+<title>StreamDomus IPTV | Servicio IPTV Estable HD & 4K</title>
+<meta name="description" content="StreamDomus ofrece IPTV estable en España. Servicio premium HD & 4K con suscripción única de 50€. Soporte directo por WhatsApp y Telegram.">
 <meta name="robots" content="index,follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="StreamDomus IPTV | Servicio IPTV Estable HD & 4K">
+<meta property="og:description" content="IPTV estable, servidores premium y soporte directo. Suscripción única 50€.">
+<meta property="og:type" content="website">
 
 <style>
 :root{
@@ -25,7 +30,10 @@
 body{
   margin:0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: var(--bg);
+  background:
+    radial-gradient(900px 500px at 50% 0%, rgba(0,255,153,.08), transparent 55%),
+    radial-gradient(900px 500px at 90% 10%, rgba(42,166,255,.08), transparent 55%),
+    var(--bg);
   color:var(--fg);
   line-height:1.6;
 }
@@ -44,7 +52,8 @@ body{
   border-radius:var(--radius);
   overflow:hidden;
   border:1px solid var(--stroke);
-  margin-bottom:26px;
+  margin-bottom:28px;
+  box-shadow:0 20px 45px rgba(0,0,0,.55);
 }
 
 .heroVideo{
@@ -56,8 +65,9 @@ body{
 
 /* TEXT */
 h1{
-  font-size:clamp(28px, 3.2vw, 44px);
-  margin:14px 0 10px;
+  font-size:clamp(30px, 3.4vw, 46px);
+  margin:16px 0 10px;
+  line-height:1.15;
 }
 
 p{
@@ -67,30 +77,31 @@ p{
 }
 
 .price{
-  margin:18px auto 10px;
+  margin:20px auto 12px;
   display:inline-block;
-  padding:12px 22px;
+  padding:14px 26px;
   border-radius:999px;
   border:1px solid rgba(0,255,153,.35);
   background: rgba(0,255,153,.10);
   color:var(--accent);
   font-weight:900;
-  font-size:1.6rem;
+  font-size:1.7rem;
 }
 
+/* FEATURES */
 .features{
-  max-width:620px;
-  margin:22px auto;
+  max-width:640px;
+  margin:24px auto;
   text-align:left;
 }
 
 .features li{
-  margin:10px 0;
+  margin:11px 0;
 }
 
 /* LINKS */
 .links{
-  margin:22px 0;
+  margin:26px 0;
 }
 
 .links a{
@@ -98,65 +109,80 @@ p{
   text-decoration:none;
   font-weight:800;
   margin:0 8px;
+  white-space:nowrap;
 }
 
 /* FLOATING BUTTONS */
 .floating{
   position:fixed;
-  bottom:20px;
+  bottom:22px;
   z-index:9999;
-  width:62px;
-  height:62px;
+  width:64px;
+  height:64px;
   border-radius:999px;
   display:grid;
   place-items:center;
-  box-shadow:0 14px 34px rgba(0,0,0,.55);
+  box-shadow:0 16px 36px rgba(0,0,0,.6);
+  border:1px solid rgba(255,255,255,.12);
+  backdrop-filter: blur(6px);
 }
 
-.whatsapp{right:20px;background:rgba(37,211,102,.25)}
-.telegram{left:20px;background:rgba(34,158,217,.25)}
+.whatsapp{right:22px;background:rgba(37,211,102,.28)}
+.telegram{left:22px;background:rgba(34,158,217,.28)}
 
 .floating svg{
-  width:32px;
-  height:32px;
+  width:34px;
+  height:34px;
   fill:#fff;
 }
 </style>
+
+<!-- Schema -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"StreamDomus",
+  "description":"Servicio IPTV estable en España con suscripción única. HD & 4K y soporte directo.",
+  "inLanguage":"es"
+}
+</script>
 </head>
 
 <body>
 
 <div class="container">
 
-  <!-- VIDEO STREAMDOMUS (DROPBOX · dl=1 · POSTER PNG) -->
+  <!-- VIDEO STREAMDOMUS (DROPBOX DIRECTO) -->
   <div class="videoBox">
     <video class="heroVideo"
            controls
            playsinline
            preload="metadata"
            poster="./assets/img/poster.png">
-      <source src="https://www.dropbox.com/scl/fi/4gu20xvky6q4rtzmzj6d9/streamdomus_video.mp4?dl=1" type="video/mp4">
+      <source src="https://dl.dropboxusercontent.com/scl/fi/4gu20xvky6q4rtzmzj6d9/streamdomus_video.mp4?rlkey=edqd1uy19tpkbptlluvgayyfw" type="video/mp4">
       Tu navegador no soporta video HTML5.
     </video>
   </div>
 
-  <h1>IPTV estable en España – StreamDomus</h1>
+  <h1>Servicio IPTV estable en España</h1>
 
   <p>
-    Canales, deportes, películas y series en <strong>HD & 4K</strong>.<br>
-    Servicio estable, servidores premium y soporte real.
+    StreamDomus ofrece un servicio IPTV premium con estabilidad diaria.<br>
+    Canales, deportes, películas y series en <strong>HD & 4K</strong>.
   </p>
 
-  <div class="price">Suscripción única: 50€</div>
+  <div class="price">Suscripción única · 50€</div>
 
-  <p><strong>Sin pruebas.</strong> Servicio pensado para clientes que buscan calidad.</p>
+  <p><strong>Sin pruebas.</strong> Servicio orientado a clientes que buscan calidad y estabilidad.</p>
 
   <ul class="features">
-    <li>✔ +20.000 canales</li>
+    <li>✔ Servidores premium con sistema anti-freeze</li>
+    <li>✔ +20.000 canales internacionales</li>
     <li>✔ Deportes y fútbol internacional</li>
     <li>✔ Películas y series actualizadas</li>
-    <li>✔ Estabilidad diaria (anti-freeze)</li>
-    <li>✔ Smart TV, Android, iOS, Fire Stick y PC</li>
+    <li>✔ Compatible con Smart TV, Android, iOS, Fire Stick y PC</li>
+    <li>✔ Soporte directo y atención personalizada</li>
   </ul>
 
   <p><strong>Contacto exclusivo por mensajería directa</strong></p>
@@ -173,20 +199,20 @@ p{
 
 <!-- WHATSAPP -->
 <a class="floating whatsapp"
-href="https://wa.me/34642425345?text=Hola%20quiero%20contratar%20la%20suscripción%20IPTV%20de%2050€"
-target="_blank" aria-label="WhatsApp">
-<svg viewBox="0 0 16 16">
-<path d="M13.601 2.326A7.85 7.85 0 0 0 8.02.003C3.62.003.06 3.563.06 7.963c0 1.404.366 2.775 1.063 3.992L0 16l4.13-1.084a7.94 7.94 0 0 0 3.89 1.002h.003c4.4 0 7.96-3.56 7.96-7.96a7.9 7.9 0 0 0-2.382-5.632z"/>
-</svg>
+   href="https://wa.me/34642425345?text=Hola%20quiero%20contratar%20la%20suscripción%20IPTV%20de%2050€"
+   target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 16 16">
+    <path d="M13.601 2.326A7.85 7.85 0 0 0 8.02.003C3.62.003.06 3.563.06 7.963c0 1.404.366 2.775 1.063 3.992L0 16l4.13-1.084a7.94 7.94 0 0 0 3.89 1.002h.003c4.4 0 7.96-3.56 7.96-7.96a7.9 7.9 0 0 0-2.382-5.632z"/>
+  </svg>
 </a>
 
 <!-- TELEGRAM -->
 <a class="floating telegram"
-href="https://t.me/adrianrs9282"
-target="_blank" aria-label="Telegram">
-<svg viewBox="0 0 16 16">
-<path d="M16 3.038a2 2 0 0 0-2.78-1.86L1.4 5.692a2 2 0 0 0 .08 3.78l3.13 1.09 1.2 3.88a1 1 0 0 0 1.63.46l1.93-1.87 3.78 2.78a2 2 0 0 0 3.16-1.1L16 3.038z"/>
-</svg>
+   href="https://t.me/adrianrs92822"
+   target="_blank" aria-label="Telegram">
+  <svg viewBox="0 0 16 16">
+    <path d="M16 3.038a2 2 0 0 0-2.78-1.86L1.4 5.692a2 2 0 0 0 .08 3.78l3.13 1.09 1.2 3.88a1 1 0 0 0 1.63.46l1.93-1.87 3.78 2.78a2 2 0 0 0 3.16-1.1L16 3.038z"/>
+  </svg>
 </a>
 
 </body>
