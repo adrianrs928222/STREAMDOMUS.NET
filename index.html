@@ -245,20 +245,55 @@ footer a{
 }
 footer a:hover{opacity:.9}
 
-/* SEO FOOT LINKS (discretos) */
-.seoFootLinks{
-  margin-top:10px;
-  font-size:12px;
-  opacity:.35;
+/* LEGAL */
+.legalSection{
+  margin-top: 24px;
+  border-top:1px solid var(--stroke);
+  background: rgba(255,255,255,.02);
 }
-.seoFootLinks a{
-  color: rgba(255,255,255,.75);
-  text-decoration:none;
+.legalContainer{
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 28px 18px 36px;
+  text-align:left;
+}
+.legalHeader{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-bottom: 14px;
+}
+.legalHeader h2{
+  margin:0;
+  font-size:1.25rem;
+}
+.legalHeader .legalHint{
+  color: rgba(255,255,255,.55);
   font-weight:800;
-  margin:0 6px;
-  white-space:nowrap;
+  font-size:.95rem;
+  border:1px solid var(--stroke);
+  background: rgba(255,255,255,.03);
+  padding:6px 10px;
+  border-radius:999px;
 }
-.seoFootLinks a:hover{opacity:.9}
+.legalBlock{
+  border:1px solid var(--stroke);
+  background: rgba(255,255,255,.03);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-top: 12px;
+}
+.legalBlock h3{
+  margin:0 0 10px;
+  font-size:1.1rem;
+}
+.legalBlock p{
+  margin:8px 0;
+  color: var(--muted);
+  font-size: .98rem;
+}
 
 /* FLOATING BUTTONS */
 .floating{
@@ -280,27 +315,191 @@ footer a:hover{opacity:.9}
 .floating svg{width:34px;height:34px;fill:#fff}
 .sr{position:absolute;left:-9999px}
 </style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"StreamDomus",
+  "description":"Servicio digital premium en España con acceso único. Calidad HD & 4K y soporte directo por WhatsApp y Telegram.",
+  "inLanguage":"es"
+}
+</script>
 </head>
 
 <body>
-<div class="container">
+  <div class="container">
 
-<footer>
-  © <span id="y"></span> StreamDomus · Atención directa por WhatsApp/Telegram ·
-  <a href="#aviso-legal">Aviso legal</a> ·
-  <a href="#politica-privacidad">Política de privacidad</a>
+    <div class="topbar">
+      <div class="brand"><span class="brandDot"></span><span>STREAMDOMUS</span></div>
+      <div class="miniTag">Soporte directo · Activación rápida</div>
+    </div>
 
-  <div class="seoFootLinks">
-    <a href="acceso-digital-50-euros.html">Acceso digital 50€</a> ·
-    <a href="contratar-servicio-digital-online.html">Contratar online</a> ·
-    <a href="servicio-digital-estable-espana.html">Servicio estable</a>
+    <section class="hero">
+
+      <!-- VIDEO (poster visible: preload="none") -->
+      <div class="videoBox">
+        <video class="heroVideo"
+               controls
+               playsinline
+               preload="none"
+               poster="./assets/img/poster.png">
+          <source src="https://dl.dropboxusercontent.com/scl/fi/4gu20xvky6q4rtzmzj6d9/streamdomus_video.mp4?rlkey=edqd1uy19tpkbptlluvgayyfw" type="video/mp4">
+          Tu navegador no soporta video HTML5.
+        </video>
+      </div>
+
+      <div class="heroContent">
+        <h1>Servicio digital premium en España</h1>
+        <p>Contenido y experiencia en <strong>HD & 4K</strong>. Servicio premium con estabilidad diaria y soporte real.</p>
+
+        <div class="badges">
+          <div class="badgePrice">Acceso único: 50€</div>
+          <div class="badgeNote">Sin pruebas · Servicio premium</div>
+        </div>
+
+        <p style="margin-top:10px"><strong>Contratación directa</strong> por WhatsApp o Telegram. Atención rápida.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h2>Qué incluye</h2>
+          <ul>
+            <li>✔ Acceso premium con calidad HD & 4K</li>
+            <li>✔ Experiencia optimizada y estable</li>
+            <li>✔ Guía paso a paso (activación/uso)</li>
+            <li>✔ Compatible con móvil, TV y ordenador</li>
+            <li>✔ Soporte directo y atención personalizada</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Cómo contratar</h2>
+          <p style="margin:0;color:var(--muted)">
+            Envía el mensaje: <strong>“Quiero el acceso de 50€”</strong><br>
+            y te respondemos con los pasos.
+          </p>
+
+          <!-- BOTONES GRANDES (WhatsApp + Telegram) -->
+          <div class="ctaBox">
+            <a class="btn btnPrimary"
+               href="https://wa.me/34642425345?text=Vídeo%20(abrir%20y%20reproducir)%3A%0Ahttps%3A%2F%2Fdl.dropboxusercontent.com%2Fscl%2Ffi%2F2sasihwqi043alfzm03kt%2Fvideo.mp4%3Frlkey%3Dwdq18xy0t8ao7ikxswah6ku5m%0A%0AHola%2C%20quiero%20el%20acceso%20de%2050€."
+               target="_blank" rel="noopener">
+              <svg viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 8.02.003C3.62.003.06 3.563.06 7.963c0 1.404.366 2.775 1.063 3.992L0 16l4.13-1.084a7.94 7.94 0 0 0 3.89 1.002h.003c4.4 0 7.96-3.56 7.96-7.96a7.9 7.9 0 0 0-2.382-5.632z"/>
+              </svg>
+              Contratar por WhatsApp
+            </a>
+
+            <a class="btn btnSecondary"
+               href="https://t.me/adrianrs92822"
+               target="_blank" rel="noopener">
+              <svg viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M16 3.038a2 2 0 0 0-2.78-1.86L1.4 5.692a2 2 0 0 0 .08 3.78l3.13 1.09 1.2 3.88a1 1 0 0 0 1.63.46l1.93-1.87 3.78 2.78a2 2 0 0 0 3.16-1.1L16 3.038z"/>
+              </svg>
+              Contratar por Telegram
+            </a>
+          </div>
+
+          <!-- IDENTIFICADORES -->
+          <div class="chips" aria-label="Contacto">
+            <div class="chip">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.601 2.326A7.85 7.85 0 0 0 8.02.003C3.62.003.06 3.563.06 7.963c0 1.404.366 2.775 1.063 3.992L0 16l4.13-1.084a7.94 7.94 0 0 0 3.89 1.002h.003c4.4 0 7.96-3.56 7.96-7.96a7.9 7.9 0 0 0-2.382-5.632z"/></svg>
+              +34 642 425 345
+            </div>
+            <div class="chip">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M16 3.038a2 2 0 0 0-2.78-1.86L1.4 5.692a2 2 0 0 0 .08 3.78l3.13 1.09 1.2 3.88a1 1 0 0 0 1.63.46l1.93-1.87 3.78 2.78a2 2 0 0 0 3.16-1.1L16 3.038z"/></svg>
+              @adrianrs92822
+            </div>
+          </div>
+
+          <p style="margin:12px 0 0;color:rgba(255,255,255,.55);font-size:.95rem">
+            Servicio orientado a calidad y estabilidad.
+          </p>
+        </div>
+      </div>
+
+      <div class="seoLinks">
+        <a href="servicio-premium.html">Servicio premium</a> ·
+        <a href="soporte-directo.html">Soporte directo</a> ·
+        <a href="acceso-50-euros.html">Acceso 50€</a> ·
+        <a href="hd-4k.html">HD & 4K</a> ·
+        <a href="contratar-servicio.html">Contratar</a>
+      </div>
+
+    </section>
+
+    <footer>
+      © <span id="y"></span> StreamDomus · Atención directa por WhatsApp/Telegram ·
+      <a href="#aviso-legal">Aviso legal</a> ·
+      <a href="#politica-privacidad">Política de privacidad</a>
+    </footer>
+
   </div>
-</footer>
 
-</div>
+  <!-- LEGAL (MISMA PÁGINA) -->
+  <section id="legal" class="legalSection">
+    <div class="legalContainer">
+      <div class="legalHeader">
+        <h2>Información legal</h2>
+        <div class="legalHint">Web de una sola página</div>
+      </div>
 
-<script>
-  document.getElementById("y").textContent = new Date().getFullYear();
-</script>
+      <div id="aviso-legal" class="legalBlock">
+        <h3>Aviso legal</h3>
+        <p>
+          Este sitio web ofrece información sobre un servicio digital de carácter privado.
+          El acceso y uso del sitio atribuye la condición de usuario, quien acepta, desde dicho acceso,
+          las presentes condiciones de uso.
+        </p>
+        <p>
+          El titular no se hace responsable del uso indebido de la información contenida en este sitio web,
+          ni de posibles daños derivados del acceso o uso del contenido.
+        </p>
+        <p>
+          La contratación y el contacto se realizan de forma directa a través de plataformas externas
+          (WhatsApp y Telegram), sujetas a sus propias condiciones.
+        </p>
+      </div>
+
+      <div id="politica-privacidad" class="legalBlock">
+        <h3>Política de privacidad</h3>
+        <p>
+          Este sitio web no recoge datos personales mediante formularios propios ni crea cuentas de usuario.
+        </p>
+        <p>
+          El contacto se realiza exclusivamente a través de WhatsApp y Telegram. Al usar dichos canales,
+          el tratamiento de datos queda sujeto a las políticas de privacidad de esas plataformas.
+        </p>
+        <p>
+          No se utilizan cookies propias ni herramientas de seguimiento o analítica en este sitio web.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp -->
+  <a class="floating whatsapp"
+     href="https://wa.me/34642425345?text=Vídeo%20(abrir%20y%20reproducir)%3A%0Ahttps%3A%2F%2Fdl.dropboxusercontent.com%2Fscl%2Ffi%2F2sasihwqi043alfzm03kt%2Fvideo.mp4%3Frlkey%3Dwdq18xy0t8ao7ikxswah6ku5m%0A%0AHola%2C%20quiero%20el%20acceso%20de%2050€."
+     target="_blank" rel="noopener" aria-label="WhatsApp">
+    <span class="sr">WhatsApp</span>
+    <svg viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M13.601 2.326A7.85 7.85 0 0 0 8.02.003C3.62.003.06 3.563.06 7.963c0 1.404.366 2.775 1.063 3.992L0 16l4.13-1.084a7.94 7.94 0 0 0 3.89 1.002h.003c4.4 0 7.96-3.56 7.96-7.96a7.9 7.9 0 0 0-2.382-5.632z"/>
+    </svg>
+  </a>
+
+  <!-- Floating Telegram -->
+  <a class="floating telegram"
+     href="https://t.me/adrianrs92822"
+     target="_blank" rel="noopener" aria-label="Telegram">
+    <span class="sr">Telegram</span>
+    <svg viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M16 3.038a2 2 0 0 0-2.78-1.86L1.4 5.692a2 2 0 0 0 .08 3.78l3.13 1.09 1.2 3.88a1 1 0 0 0 1.63.46l1.93-1.87 3.78 2.78a2 2 0 0 0 3.16-1.1L16 3.038z"/>
+    </svg>
+  </a>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
