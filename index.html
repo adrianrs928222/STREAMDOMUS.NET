@@ -218,7 +218,7 @@ li{margin: 9px 0; color: var(--fg);}
 }
 .chip svg{width:16px;height:16px;fill:rgba(255,255,255,.9)}
 
-/* SEO LINKS */
+/* SEO LINKS (discretos en página) */
 .seoLinks{
   padding: 0 18px 18px;
   text-align:center;
@@ -314,6 +314,32 @@ footer a:hover{opacity:.9}
 .telegram{left:22px;background:rgba(34,158,217,.28)}
 .floating svg{width:34px;height:34px;fill:#fff}
 .sr{position:absolute;left:-9999px}
+
+/* SEO SECCIONES “NO EN MENÚ” (visibles al rastreo, no molestan) */
+.seoSection{
+  margin-top: 24px;
+  border-top:1px solid var(--stroke);
+  background: rgba(255,255,255,.015);
+}
+.seoContainer{
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 24px 18px 10px;
+  text-align:left;
+}
+.seoContainer h2{
+  margin:0 0 10px;
+  font-size:1.15rem;
+}
+.seoContainer p{
+  margin:8px 0;
+  color: var(--muted);
+}
+.seoNote{
+  margin-top:10px;
+  color: rgba(255,255,255,.55);
+  font-size:.92rem;
+}
 </style>
 
 <script type="application/ld+json">
@@ -420,11 +446,9 @@ footer a:hover{opacity:.9}
       </div>
 
       <div class="seoLinks">
-        <a href="servicio-premium.html">Servicio premium</a> ·
-        <a href="soporte-directo.html">Soporte directo</a> ·
-        <a href="acceso-50-euros.html">Acceso 50€</a> ·
-        <a href="hd-4k.html">HD & 4K</a> ·
-        <a href="contratar-servicio.html">Contratar</a>
+        <a href="#acceso-digital-50-euros">Acceso 50€</a> ·
+        <a href="#contratar-servicio-digital-online">Contratar online</a> ·
+        <a href="#servicio-digital-estable-espana">Servicio estable</a>
       </div>
 
     </section>
@@ -436,6 +460,46 @@ footer a:hover{opacity:.9}
     </footer>
 
   </div>
+
+  <!-- SEO SECCIONES (EN LA MISMA PÁGINA, NO MOLESTAN EN LA HOME) -->
+  <section id="acceso-digital-50-euros" class="seoSection">
+    <div class="seoContainer">
+      <h2>Acceso digital por 50€ en España</h2>
+      <p>
+        Acceso digital pensado para usuarios que buscan una experiencia estable, compatible con Smart TV,
+        móvil y ordenador, con una guía clara de activación y soporte directo.
+      </p>
+      <p class="seoNote">
+        Nota: esta sección está en la misma página para mantener una web simple y rápida.
+      </p>
+    </div>
+  </section>
+
+  <section id="contratar-servicio-digital-online" class="seoSection">
+    <div class="seoContainer">
+      <h2>Contratar servicio digital online</h2>
+      <p>
+        Contratación directa y sencilla, sin registros complejos. Atención por mensajería y pasos claros
+        de activación para empezar sin complicaciones.
+      </p>
+      <p class="seoNote">
+        Consejo: si buscas velocidad, escribe directamente el mensaje “Quiero el acceso de 50€” y te contestan con los pasos.
+      </p>
+    </div>
+  </section>
+
+  <section id="servicio-digital-estable-espana" class="seoSection">
+    <div class="seoContainer">
+      <h2>Servicio digital estable en España</h2>
+      <p>
+        Servicio orientado a estabilidad diaria y facilidad de uso, compatible con los principales dispositivos.
+        Ideal para quien prioriza fiabilidad y una experiencia clara.
+      </p>
+      <p class="seoNote">
+        Mantén la página sin cambios frecuentes: ayuda a que Google la rastree mejor.
+      </p>
+    </div>
+  </section>
 
   <!-- LEGAL (MISMA PÁGINA) -->
   <section id="legal" class="legalSection">
