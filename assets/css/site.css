@@ -269,3 +269,47 @@ footer a:hover {
 .showLegal {
   display: block;
 }
+
+/* Estilo responsive para pantallas pequeñas (móviles y tabletas) */
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 32px;
+  }
+
+  .heroContent p {
+    font-size: 1rem;
+  }
+
+  .badgePrice,
+  .badgeNote {
+    font-size: 1.1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaBox {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px 14px;
+  }
+
+  .chips {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroContent h1 {
+    font-size: 28px;
+  }
+
+  .heroContent p {
+    font-size: 0.95rem;
+  }
+}
