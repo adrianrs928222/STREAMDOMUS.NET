@@ -14,7 +14,6 @@
 
     <!-- Vincula el archivo CSS -->
     <link rel="stylesheet" href="assets/css/site.css">
-
   </head>
   <body>
     <div class="container">
@@ -95,6 +94,22 @@
           </div>
         </div>
 
+        <!-- Enlaces para mostrar Aviso Legal y Política de Privacidad -->
+        <a href="javascript:void(0)" onclick="toggleLegal('aviso-legal')">Ver Aviso Legal</a>
+        <a href="javascript:void(0)" onclick="toggleLegal('politica-privacidad')">Ver Política de Privacidad</a>
+
+        <!-- Sección de Aviso Legal -->
+        <div id="aviso-legal" class="legalBlock">
+          <h3>Aviso Legal</h3>
+          <p>Este sitio web ofrece información sobre un servicio digital de carácter privado...</p>
+        </div>
+
+        <!-- Sección de Política de Privacidad -->
+        <div id="politica-privacidad" class="legalBlock">
+          <h3>Política de privacidad</h3>
+          <p>Este sitio web no recoge datos personales mediante formularios propios ni crea cuentas de usuario...</p>
+        </div>
+
         <div class="seoLinks">
           <a href="servicio-premium.html">Servicio premium</a> ·
           <a href="soporte-directo.html">Soporte directo</a> ·
@@ -104,7 +119,6 @@
         </div>
       </section>
 
-      <!-- Información Legal -->
       <footer>
         © <span id="y"></span> StreamDomus · Atención directa por WhatsApp/Telegram ·
         <a href="#aviso-legal">Aviso legal</a> · <a href="#politica-privacidad">Política de privacidad</a>
