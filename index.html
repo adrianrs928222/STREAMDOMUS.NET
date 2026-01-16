@@ -13,310 +13,212 @@
   <meta property="og:type" content="website">
   
   <style>
-    :root{
-      --bg:#050505;
-      --panel:#0b0b0b;
-      --stroke:#1f1f1f;
-      --fg:#ffffff;
-      --muted:#cfcfcf;
-      --accent:#00ff99;
-      --accent2:#2aa6ff;
-      --radius:18px;
-      --shadow:0 20px 45px rgba(0,0,0,.55);
+    :root {
+      --bg: #050505;
+      --panel: #0b0b0b;
+      --stroke: #1f1f1f;
+      --fg: #ffffff;
+      --muted: #cfcfcf;
+      --accent: #00ff99;
+      --accent2: #2aa6ff;
+      --radius: 18px;
+      --shadow: 0 20px 45px rgba(0,0,0,.55);
     }
 
-    *{box-sizing:border-box}
+    * { box-sizing: border-box; }
 
-    html{scroll-behavior:smooth}
+    html { scroll-behavior: smooth; }
 
-    body{
-      margin:0;
+    body {
+      margin: 0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background:
-        radial-gradient(900px 500px at 50% 0%, rgba(0,255,153,.08), transparent 55%),
-        radial-gradient(900px 500px at 90% 10%, rgba(42,166,255,.08), transparent 55%),
-        var(--bg);
-      color:var(--fg);
-      line-height:1.6;
+      background: radial-gradient(900px 500px at 50% 0%, rgba(0,255,153,.08), transparent 55%),
+                  radial-gradient(900px 500px at 90% 10%, rgba(42,166,255,.08), transparent 55%),
+                  var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
     }
 
-    .container{
-      max-width:980px;
-      margin:0 auto;
-      padding:22px;
-      text-align:center;
-    }
-
-    /* Ocultar contenido legal */
-    .hidden-content {
-      display: none;
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 22px;
+      text-align: center;
     }
 
     /* Top bar */
-    .topbar{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:12px;
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
       margin: 6px 0 18px;
     }
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      font-weight:900;
-      letter-spacing:.6px;
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      letter-spacing: .6px;
     }
-    .brandDot{
-      width:12px;height:12px;border-radius:999px;
+    .brandDot {
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
       background: linear-gradient(135deg, var(--accent), var(--accent2));
       box-shadow: 0 0 0 6px rgba(0,255,153,.08);
     }
-    .miniTag{
-      font-size:.9rem;
+    .miniTag {
+      font-size: .9rem;
       color: var(--muted);
-      border:1px solid var(--stroke);
-      padding:6px 10px;
-      border-radius:999px;
-      background: rgba(255,255,255,.03);
-      white-space:nowrap;
+      border: 1px solid var(--stroke);
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .03);
+      white-space: nowrap;
     }
 
     /* Hero Section */
-    .hero{
-      border:1px solid var(--stroke);
-      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+    .hero {
+      border: 1px solid var(--stroke);
+      background: linear-gradient(180deg, rgba(255, 255, 255, .04), rgba(255, 255, 255, .02));
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      overflow:hidden;
+      overflow: hidden;
     }
 
     /* Video */
-    .videoBox{
-      width:100%;
-      background:#000;
-      border-bottom:1px solid var(--stroke);
+    .videoBox {
+      width: 100%;
+      background: #000;
+      border-bottom: 1px solid var(--stroke);
     }
-    .heroVideo{
-      width:100%;
-      height:auto;
-      display:block;
-      background:#000;
+    .heroVideo {
+      width: 100%;
+      height: auto;
+      display: block;
+      background: #000;
     }
 
     /* Content */
-    .heroContent{
+    .heroContent {
       padding: 18px 18px 6px;
     }
-    h1{
-      font-size:clamp(30px, 3.4vw, 46px);
+    h1 {
+      font-size: clamp(30px, 3.4vw, 46px);
       margin: 10px 0 10px;
-      line-height:1.15;
+      line-height: 1.15;
     }
-    p{
-      margin:8px 0;
-      color:var(--muted);
-      font-size:1.05rem;
+    p {
+      margin: 8px 0;
+      color: var(--muted);
+      font-size: 1.05rem;
     }
 
-    .badges{
+    .badges {
       margin: 16px 0 8px;
-      display:flex;
-      justify-content:center;
-      gap:10px;
-      flex-wrap:wrap;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
     }
-    .badgePrice{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
+    .badgePrice {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
       padding: 10px 16px;
-      border-radius:999px;
-      border:1px solid rgba(0,255,153,.35);
-      background: rgba(0,255,153,.10);
+      border-radius: 999px;
+      border: 1px solid rgba(0, 255, 153, .35);
+      background: rgba(0, 255, 153, .10);
       color: var(--accent);
       font-weight: 900;
       font-size: 1.45rem;
     }
-    .badgeNote{
-      display:inline-flex;
-      align-items:center;
+    .badgeNote {
+      display: inline-flex;
+      align-items: center;
       padding: 10px 14px;
-      border-radius:999px;
-      border:1px solid var(--stroke);
-      background: rgba(255,255,255,.03);
+      border-radius: 999px;
+      border: 1px solid var(--stroke);
+      background: rgba(255, 255, 255, .03);
       color: var(--muted);
       font-weight: 800;
       font-size: 1rem;
     }
 
-    /* Grid */
-    .grid{
-      display:grid;
-      gap:14px;
-      grid-template-columns: 1fr;
-      padding: 16px 18px 18px;
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      overflow: auto;
+      padding-top: 60px;
     }
-    @media (min-width: 900px){
-      .grid{grid-template-columns: 1.12fr .88fr;}
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
     }
-    .card{
-      border:1px solid var(--stroke);
-      background: rgba(255,255,255,.03);
-      border-radius: var(--radius);
-      padding: 16px;
-      text-align:left;
+    .modal-header {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
-    .card h2{
-      margin:0 0 10px;
-      font-size: 1.15rem;
+    .modal-body {
+      margin-bottom: 20px;
     }
-    ul{margin:0; padding:0 0 0 18px;}
-    li{margin: 9px 0; color: var(--fg);}
-
-    /* CTA */
-    .ctaBox{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;}
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-      padding: 12px 14px;
-      border-radius: 14px;
-      border:1px solid var(--stroke);
-      background: rgba(255,255,255,.03);
-      color: var(--fg);
-      text-decoration:none;
-      font-weight: 900;
-      width:100%;
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
     }
-    .btn:hover{opacity:.93}
-    .btnPrimary{
-      border:1px solid rgba(0,255,153,.35);
-      background: rgba(0,255,153,.12);
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
     }
-    .btnSecondary{
-      border:1px solid rgba(42,166,255,.35);
-      background: rgba(42,166,255,.10);
-    }
-    .btn svg{width:20px; height:20px; fill:currentColor}
-
-    /* Inline contact chips */
-    .chips{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      margin: 10px 0 0;
-    }
-    .chip{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:8px 10px;
-      border-radius:999px;
-      border:1px solid var(--stroke);
-      background: rgba(255,255,255,.03);
-      color: rgba(255,255,255,.75);
-      font-weight:800;
-      font-size:.95rem;
-    }
-    .chip svg{width:16px;height:16px;fill:rgba(255,255,255,.9)}
-
-    /* Footer */
-    footer{
-      margin: 18px 0 6px;
-      color: rgba(255,255,255,.55);
-      font-size: .95rem;
-    }
-    footer a{
-      color: rgba(255,255,255,.75);
-      text-decoration:none;
-      font-weight:800;
-    }
-    footer a:hover{opacity:.9}
 
     /* Floating Buttons */
-    .floating{
-      position:fixed;
-      bottom:22px;
-      z-index:9999;
-      width:64px;
-      height:64px;
-      border-radius:999px;
-      display:grid;
-      place-items:center;
-      box-shadow:0 16px 36px rgba(0,0,0,.6);
-      border:1px solid rgba(255,255,255,.12);
+    .floating {
+      position: fixed;
+      bottom: 22px;
+      z-index: 9999;
+      width: 64px;
+      height: 64px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, .6);
+      border: 1px solid rgba(255, 255, 255, .12);
       backdrop-filter: blur(6px);
       -webkit-backdrop-filter: blur(6px);
     }
-    .whatsapp{right:22px;background:rgba(37,211,102,.28)}
-    .telegram{left:22px;background:rgba(34,158,217,.28)}
-    .floating svg{width:34px;height:34px;fill:#fff}
-
-    /* Legal */
-    .legalSection{
-      margin-top: 24px;
-      border-top:1px solid var(--stroke);
-      background: rgba(255,255,255,.02);
+    .whatsapp {
+      right: 22px;
+      background: rgba(37, 211, 102, .28);
     }
-    .legalContainer{
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 28px 18px 36px;
-      text-align:left;
+    .telegram {
+      left: 22px;
+      background: rgba(34, 158, 217, .28);
     }
-    .legalHeader{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      flex-wrap:wrap;
-      margin-bottom: 14px;
+    .floating svg {
+      width: 34px;
+      height: 34px;
+      fill: #fff;
     }
-    .legalHeader h2{
-      margin:0;
-      font-size:1.25rem;
-    }
-    .legalHeader .legalHint{
-      color: rgba(255,255,255,.55);
-      font-weight:800;
-      font-size:.95rem;
-      border:1px solid var(--stroke);
-      background: rgba(255,255,255,.03);
-      padding:6px 10px;
-      border-radius:999px;
-    }
-    .legalBlock{
-      border:1px solid var(--stroke);
-      background: rgba(255,255,255,.03);
-      border-radius: var(--radius);
-      padding: 16px;
-      margin-top: 12px;
-    }
-    .legalBlock h3{
-      margin:0 0 10px;
-      font-size:1.1rem;
-    }
-    .legalBlock p{
-      margin:8px 0;
-      color: var(--muted);
-      font-size: .98rem;
-    }
-
-    /* Disable Right Click and F12 */
-    body {
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-    document.addEventListener('contextmenu', event => event.preventDefault());
-    document.onkeydown = function(e) {
-      if (e.keyCode === 123) {  // F12 key
-        return false;
-      }
-    };
   </style>
+
 </head>
 
 <body>
@@ -374,39 +276,54 @@
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Hidden content -->
-      <div class="hidden-content">
-        <!-- Aviso Legal -->
-        <div id="aviso-legal">
-          <h3>Aviso legal</h3>
+    <!-- Modal -->
+    <div id="modalAviso" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="cerrarModal('modalAviso')">&times;</span>
+        <div class="modal-header">Aviso Legal</div>
+        <div class="modal-body">
           <p>Este sitio web ofrece información sobre un servicio digital de carácter privado...</p>
         </div>
+      </div>
+    </div>
 
-        <!-- Política de Privacidad -->
-        <div id="politica-privacidad">
-          <h3>Política de privacidad</h3>
+    <!-- Modal de Política de Privacidad -->
+    <div id="modalPolitica" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="cerrarModal('modalPolitica')">&times;</span>
+        <div class="modal-header">Política de Privacidad</div>
+        <div class="modal-body">
           <p>Este sitio web no recoge datos personales mediante formularios propios...</p>
         </div>
       </div>
+    </div>
 
-      <footer>
-        © StreamDomus · Atención directa por WhatsApp/Telegram ·
-        <a href="javascript:void(0);" onclick="mostrarAvisoLegal()">Aviso legal</a> ·
-        <a href="javascript:void(0);" onclick="mostrarPoliticaPrivacidad()">Política de privacidad</a>
-      </footer>
+    <!-- Enlaces para mostrar los modales -->
+    <footer>
+      © StreamDomus · Atención directa por WhatsApp/Telegram ·
+      <a href="javascript:void(0);" onclick="mostrarModal('modalAviso')">Aviso legal</a> ·
+      <a href="javascript:void(0);" onclick="mostrarModal('modalPolitica')">Política de privacidad</a>
+    </footer>
 
-      <!-- Script para mostrar contenido legal -->
-      <script>
-        function mostrarAvisoLegal() {
-          alert("Aviso legal: Este sitio web ofrece información sobre un servicio digital de carácter privado...");
+    <!-- Scripts para controlar el modal -->
+    <script>
+      function mostrarModal(modalId) {
+        document.getElementById(modalId).style.display = "block";
+      }
+
+      function cerrarModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+      }
+
+      // Cerrar el modal si el usuario hace clic fuera del contenido
+      window.onclick = function(event) {
+        if (event.target.className == "modal") {
+          event.target.style.display = "none";
         }
-
-        function mostrarPoliticaPrivacidad() {
-          alert("Política de privacidad: Este sitio web no recoge datos personales mediante formularios propios...");
-        }
-      </script>
-    </section>
+      }
+    </script>
   </div>
 
   <!-- Floating WhatsApp -->
@@ -424,6 +341,5 @@
       <path d="M16 3.038a2 2 0 0 0-2.78-1.86L1.4 5.692a2 2 0 0 0 .08 3.78l3.13 1.09 1.2 3.88a1 1 0 0 0 1.63.46l1.93-1.87 3.78 2.78a2 2 0 0 0 3.16-1.1L16 3.038z"/>
     </svg>
   </a>
-
 </body>
 </html>
