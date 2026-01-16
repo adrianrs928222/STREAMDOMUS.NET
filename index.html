@@ -13,293 +13,313 @@
   <meta property="og:type" content="website">
   
   <style>
-    :root {
-      --bg: #050505;
-      --panel: #0b0b0b;
-      --stroke: #1f1f1f;
-      --fg: #ffffff;
-      --muted: #cfcfcf;
-      --accent: #00ff99;
-      --accent2: #2aa6ff;
-      --radius: 18px;
-      --shadow: 0 20px 45px rgba(0, 0, 0, .55);
+    :root{
+      --bg:#050505;
+      --panel:#0b0b0b;
+      --stroke:#1f1f1f;
+      --fg:#ffffff;
+      --muted:#cfcfcf;
+      --accent:#00ff99;
+      --accent2:#2aa6ff;
+      --radius:18px;
+      --shadow:0 20px 45px rgba(0,0,0,.55);
     }
 
-    * { box-sizing: border-box; }
+    *{box-sizing:border-box}
 
-    html { scroll-behavior: smooth; }
+    html{scroll-behavior:smooth}
 
-    body {
-      margin: 0;
+    body{
+      margin:0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: radial-gradient(900px 500px at 50% 0%, rgba(0, 255, 153, .08), transparent 55%),
-                  radial-gradient(900px 500px at 90% 10%, rgba(42, 166, 255, .08), transparent 55%),
-                  var(--bg);
-      color: var(--fg);
-      line-height: 1.6;
+      background:
+        radial-gradient(900px 500px at 50% 0%, rgba(0,255,153,.08), transparent 55%),
+        radial-gradient(900px 500px at 90% 10%, rgba(42,166,255,.08), transparent 55%),
+        var(--bg);
+      color:var(--fg);
+      line-height:1.6;
     }
 
-    .container {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 22px;
-      text-align: center;
+    .container{
+      max-width:980px;
+      margin:0 auto;
+      padding:22px;
+      text-align:center;
+    }
+
+    /* Ocultar contenido legal */
+    .hidden-content {
+      display: none;
     }
 
     /* Top bar */
-    .topbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
+    .topbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
       margin: 6px 0 18px;
     }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 900;
-      letter-spacing: .6px;
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight:900;
+      letter-spacing:.6px;
     }
-
-    .brandDot {
-      width: 12px;
-      height: 12px;
-      border-radius: 999px;
+    .brandDot{
+      width:12px;height:12px;border-radius:999px;
       background: linear-gradient(135deg, var(--accent), var(--accent2));
-      box-shadow: 0 0 0 6px rgba(0, 255, 153, .08);
+      box-shadow: 0 0 0 6px rgba(0,255,153,.08);
     }
-
-    .miniTag {
-      font-size: .9rem;
+    .miniTag{
+      font-size:.9rem;
       color: var(--muted);
-      border: 1px solid var(--stroke);
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, .03);
-      white-space: nowrap;
+      border:1px solid var(--stroke);
+      padding:6px 10px;
+      border-radius:999px;
+      background: rgba(255,255,255,.03);
+      white-space:nowrap;
     }
 
-    /* HERO / CARD */
-    .hero {
-      border: 1px solid var(--stroke);
-      background: linear-gradient(180deg, rgba(255, 255, 255, .04), rgba(255, 255, 255, .02));
+    /* Hero Section */
+    .hero{
+      border:1px solid var(--stroke);
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      overflow: hidden;
+      overflow:hidden;
     }
 
-    /* VIDEO */
-    .videoBox {
-      width: 100%;
-      background: #000;
-      border-bottom: 1px solid var(--stroke);
+    /* Video */
+    .videoBox{
+      width:100%;
+      background:#000;
+      border-bottom:1px solid var(--stroke);
+    }
+    .heroVideo{
+      width:100%;
+      height:auto;
+      display:block;
+      background:#000;
     }
 
-    .heroVideo {
-      width: 100%;
-      height: auto;
-      display: block;
-      background: #000;
-    }
-
-    /* CONTENT */
-    .heroContent {
+    /* Content */
+    .heroContent{
       padding: 18px 18px 6px;
     }
-
-    h1 {
-      font-size: clamp(30px, 3.4vw, 46px);
+    h1{
+      font-size:clamp(30px, 3.4vw, 46px);
       margin: 10px 0 10px;
-      line-height: 1.15;
+      line-height:1.15;
+    }
+    p{
+      margin:8px 0;
+      color:var(--muted);
+      font-size:1.05rem;
     }
 
-    p {
-      margin: 8px 0;
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-
-    .badges {
+    .badges{
       margin: 16px 0 8px;
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
+      display:flex;
+      justify-content:center;
+      gap:10px;
+      flex-wrap:wrap;
     }
-
-    .badgePrice {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
+    .badgePrice{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
       padding: 10px 16px;
-      border-radius: 999px;
-      border: 1px solid rgba(0, 255, 153, .35);
-      background: rgba(0, 255, 153, .10);
+      border-radius:999px;
+      border:1px solid rgba(0,255,153,.35);
+      background: rgba(0,255,153,.10);
       color: var(--accent);
       font-weight: 900;
       font-size: 1.45rem;
     }
-
-    .badgeNote {
-      display: inline-flex;
-      align-items: center;
+    .badgeNote{
+      display:inline-flex;
+      align-items:center;
       padding: 10px 14px;
-      border-radius: 999px;
-      border: 1px solid var(--stroke);
-      background: rgba(255, 255, 255, .03);
+      border-radius:999px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.03);
       color: var(--muted);
       font-weight: 800;
       font-size: 1rem;
     }
 
-    .grid {
-      display: grid;
-      gap: 14px;
+    /* Grid */
+    .grid{
+      display:grid;
+      gap:14px;
       grid-template-columns: 1fr;
       padding: 16px 18px 18px;
     }
-
-    @media (min-width: 900px) {
-      .grid { grid-template-columns: 1.12fr .88fr; }
+    @media (min-width: 900px){
+      .grid{grid-template-columns: 1.12fr .88fr;}
     }
-
-    .card {
-      border: 1px solid var(--stroke);
-      background: rgba(255, 255, 255, .03);
+    .card{
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.03);
       border-radius: var(--radius);
       padding: 16px;
-      text-align: left;
+      text-align:left;
     }
-
-    .card h2 {
-      margin: 0 0 10px;
+    .card h2{
+      margin:0 0 10px;
       font-size: 1.15rem;
     }
-
-    ul {
-      margin: 0;
-      padding: 0 0 0 18px;
-    }
-
-    li {
-      margin: 9px 0;
-      color: var(--fg);
-    }
+    ul{margin:0; padding:0 0 0 18px;}
+    li{margin: 9px 0; color: var(--fg);}
 
     /* CTA */
-    .ctaBox {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-top: 12px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
+    .ctaBox{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px;}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
       padding: 12px 14px;
       border-radius: 14px;
-      border: 1px solid var(--stroke);
-      background: rgba(255, 255, 255, .03);
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.03);
       color: var(--fg);
-      text-decoration: none;
+      text-decoration:none;
       font-weight: 900;
-      width: 100%;
+      width:100%;
     }
-
-    .btn:hover {
-      opacity: .93;
+    .btn:hover{opacity:.93}
+    .btnPrimary{
+      border:1px solid rgba(0,255,153,.35);
+      background: rgba(0,255,153,.12);
     }
-
-    .btnPrimary {
-      border: 1px solid rgba(0, 255, 153, .35);
-      background: rgba(0, 255, 153, .12);
+    .btnSecondary{
+      border:1px solid rgba(42,166,255,.35);
+      background: rgba(42,166,255,.10);
     }
+    .btn svg{width:20px; height:20px; fill:currentColor}
 
-    .btnSecondary {
-      border: 1px solid rgba(42, 166, 255, .35);
-      background: rgba(42, 166, 255, .10);
+    /* Inline contact chips */
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin: 10px 0 0;
     }
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.03);
+      color: rgba(255,255,255,.75);
+      font-weight:800;
+      font-size:.95rem;
+    }
+    .chip svg{width:16px;height:16px;fill:rgba(255,255,255,.9)}
 
-    .floating {
-      position: fixed;
-      bottom: 22px;
-      z-index: 9999;
-      width: 64px;
-      height: 64px;
-      border-radius: 999px;
-      display: grid;
-      place-items: center;
-      box-shadow: 0 16px 36px rgba(0, 0, 0, .6);
-      border: 1px solid rgba(255, 255, 255, .12);
+    /* Footer */
+    footer{
+      margin: 18px 0 6px;
+      color: rgba(255,255,255,.55);
+      font-size: .95rem;
+    }
+    footer a{
+      color: rgba(255,255,255,.75);
+      text-decoration:none;
+      font-weight:800;
+    }
+    footer a:hover{opacity:.9}
+
+    /* Floating Buttons */
+    .floating{
+      position:fixed;
+      bottom:22px;
+      z-index:9999;
+      width:64px;
+      height:64px;
+      border-radius:999px;
+      display:grid;
+      place-items:center;
+      box-shadow:0 16px 36px rgba(0,0,0,.6);
+      border:1px solid rgba(255,255,255,.12);
       backdrop-filter: blur(6px);
       -webkit-backdrop-filter: blur(6px);
     }
+    .whatsapp{right:22px;background:rgba(37,211,102,.28)}
+    .telegram{left:22px;background:rgba(34,158,217,.28)}
+    .floating svg{width:34px;height:34px;fill:#fff}
 
-    .whatsapp {
-      right: 22px;
-      background: rgba(37, 211, 102, .28);
+    /* Legal */
+    .legalSection{
+      margin-top: 24px;
+      border-top:1px solid var(--stroke);
+      background: rgba(255,255,255,.02);
+    }
+    .legalContainer{
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 28px 18px 36px;
+      text-align:left;
+    }
+    .legalHeader{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-bottom: 14px;
+    }
+    .legalHeader h2{
+      margin:0;
+      font-size:1.25rem;
+    }
+    .legalHeader .legalHint{
+      color: rgba(255,255,255,.55);
+      font-weight:800;
+      font-size:.95rem;
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.03);
+      padding:6px 10px;
+      border-radius:999px;
+    }
+    .legalBlock{
+      border:1px solid var(--stroke);
+      background: rgba(255,255,255,.03);
+      border-radius: var(--radius);
+      padding: 16px;
+      margin-top: 12px;
+    }
+    .legalBlock h3{
+      margin:0 0 10px;
+      font-size:1.1rem;
+    }
+    .legalBlock p{
+      margin:8px 0;
+      color: var(--muted);
+      font-size: .98rem;
     }
 
-    .telegram {
-      left: 22px;
-      background: rgba(34, 158, 217, .28);
+    /* Disable Right Click and F12 */
+    body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
     }
-
-    .floating svg {
-      width: 34px;
-      height: 34px;
-      fill: #fff;
-    }
-
-    .sr {
-      position: absolute;
-      left: -9999px;
-    }
-
-    /* Estilo para la ventana modal */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0, 0, 0, 0.4);
-    }
-
-    .modal-content {
-      background-color: #fff;
-      margin: 15% auto;
-      padding: 20px;
-      border: 1px solid #888;
-      width: 80%;
-    }
-
-    .close {
-      color: #aaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-      color: black;
-      text-decoration: none;
-      cursor: pointer;
-    }
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+      if (e.keyCode === 123) {  // F12 key
+        return false;
+      }
+    };
   </style>
 </head>
 
 <body>
-
   <div class="container">
     <div class="topbar">
       <div class="brand"><span class="brandDot"></span><span>STREAMDOMUS</span></div>
@@ -308,12 +328,7 @@
 
     <section class="hero">
       <div class="videoBox">
-        <video class="heroVideo"
-          controls
-          playsinline
-          preload="none"
-          controlsList="nodownload"
-          poster="./assets/img/poster.png">
+        <video class="heroVideo" controls playsinline preload="none" poster="./assets/img/poster.png">
           <source src="https://dl.dropboxusercontent.com/scl/fi/4gu20xvky6q4rtzmzj6d9/streamdomus_video.mp4?rlkey=edqd1uy19tpkbptlluvgayyfw" type="video/mp4">
           Tu navegador no soporta video HTML5.
         </video>
@@ -322,12 +337,10 @@
       <div class="heroContent">
         <h1>Servicio digital premium en España</h1>
         <p>Contenido y experiencia en <strong>HD & 4K</strong>. Servicio premium con estabilidad diaria y soporte real.</p>
-
         <div class="badges">
           <div class="badgePrice">Acceso único: 50€</div>
           <div class="badgeNote">Sin pruebas · Servicio premium</div>
         </div>
-
         <p style="margin-top:10px"><strong>Contratación directa</strong> por WhatsApp o Telegram. Atención rápida.</p>
       </div>
 
@@ -351,73 +364,66 @@
           </p>
 
           <div class="ctaBox">
-            <a class="btn btnPrimary"
-              href="https://wa.me/34642425345?text=Vídeo%20(abrir%20y%20reproducir)%3A%0Ahttps%3A%2F%2Fdl.dropboxusercontent.com%2Fscl%2Ffi%2F2sasihwqi043alfzm03kt%2Fvideo.mp4%3Frlkey%3Dwdq18xy0t8ao7ikxswah6ku5m%0A%0AHola%2C%20quiero%20el%20acceso%20de%2050€."
-              target="_blank" rel="noopener">
+            <a class="btn btnPrimary" href="https://wa.me/34642425345?text=Vídeo%20(abrir%20y%20reproducir)%3A%0Ahttps%3A%2F%2Fdl.dropboxusercontent.com%2Fscl%2Ffi%2F2sasihwqi043alfzm03kt%2Fvideo.mp4%3Frlkey%3Dwdq18xy0t8ao7ikxswah6ku5m%0A%0AHola%2C%20quiero%20el%20acceso%20de%2050€." target="_blank" rel="noopener">
               Contratar por WhatsApp
             </a>
 
-            <a class="btn btnSecondary"
-              href="https://t.me/adrianrs92822"
-              target="_blank" rel="noopener">
+            <a class="btn btnSecondary" href="https://t.me/adrianrs92822" target="_blank" rel="noopener">
               Contratar por Telegram
             </a>
           </div>
-
-          <div class="chips">
-            <div class="chip">+34 642 425 345</div>
-            <div class="chip">@adrianrs92822</div>
-          </div>
-
-          <p style="margin:12px 0 0;color:rgba(255,255,255,.55);font-size:.95rem">
-            Servicio orientado a calidad y estabilidad.
-          </p>
         </div>
       </div>
 
-      <div class="seoLinks">
-        <a href="javascript:void(0);" onclick="openModal('aviso-legal')">Aviso Legal</a> ·
-        <a href="javascript:void(0);" onclick="openModal('politica-privacidad')">Política de privacidad</a>
+      <!-- Hidden content -->
+      <div class="hidden-content">
+        <!-- Aviso Legal -->
+        <div id="aviso-legal">
+          <h3>Aviso legal</h3>
+          <p>Este sitio web ofrece información sobre un servicio digital de carácter privado...</p>
+        </div>
+
+        <!-- Política de Privacidad -->
+        <div id="politica-privacidad">
+          <h3>Política de privacidad</h3>
+          <p>Este sitio web no recoge datos personales mediante formularios propios...</p>
+        </div>
       </div>
+
+      <footer>
+        © StreamDomus · Atención directa por WhatsApp/Telegram ·
+        <a href="javascript:void(0);" onclick="mostrarAvisoLegal()">Aviso legal</a> ·
+        <a href="javascript:void(0);" onclick="mostrarPoliticaPrivacidad()">Política de privacidad</a>
+      </footer>
+
+      <!-- Script para mostrar contenido legal -->
+      <script>
+        function mostrarAvisoLegal() {
+          alert("Aviso legal: Este sitio web ofrece información sobre un servicio digital de carácter privado...");
+        }
+
+        function mostrarPoliticaPrivacidad() {
+          alert("Política de privacidad: Este sitio web no recoge datos personales mediante formularios propios...");
+        }
+      </script>
     </section>
-
-    <footer>
-      © <span id="y"></span> StreamDomus · Atención directa por WhatsApp/Telegram ·
-      <a href="javascript:void(0);" onclick="openModal('aviso-legal')">Aviso legal</a> ·
-      <a href="javascript:void(0);" onclick="openModal('politica-privacidad')">Política de privacidad</a>
-    </footer>
   </div>
 
-  <!-- Modal de Aviso Legal -->
-  <div id="aviso-legal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('aviso-legal')">&times;</span>
-      <h3>Aviso Legal</h3>
-      <p>Este sitio web ofrece información sobre un servicio digital de carácter privado...</p>
-    </div>
-  </div>
+  <!-- Floating WhatsApp -->
+  <a class="floating whatsapp" href="https://wa.me/34642425345?text=Vídeo%20(abrir%20y%20reproducir)%3A%0Ahttps%3A%2F%2Fdl.dropboxusercontent.com%2Fscl%2Ffi%2F2sasihwqi043alfzm03kt%2Fvideo.mp4%3Frlkey%3Dwdq18xy0t8ao7ikxswah6ku5m%0A%0AHola%2C%20quiero%20el%20acceso%20de%2050€." target="_blank" rel="noopener" aria-label="WhatsApp">
+    <span class="sr">WhatsApp</span>
+    <svg viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M13.601 2.326A7.85 7.85 0 0 0 8.02.003C3.62.003.06 3.563.06 7.963c0 1.404.366 2.775 1.063 3.992L0 16l4.13-1.084a7.94 7.94 0 0 0 3.89 1.002h.003c4.4 0 7.96-3.56 7.96-7.96a7.9 7.9 0 0 0-2.382-5.632z"/>
+    </svg>
+  </a>
 
-  <!-- Modal de Política de Privacidad -->
-  <div id="politica-privacidad" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('politica-privacidad')">&times;</span>
-      <h3>Política de privacidad</h3>
-      <p>Este sitio web no recoge datos personales mediante formularios propios ni crea cuentas de usuario...</p>
-    </div>
-  </div>
-
-  <script>
-    // Funciones para abrir y cerrar el modal
-    function openModal(id) {
-      document.getElementById(id).style.display = 'block';
-    }
-
-    function closeModal(id) {
-      document.getElementById(id).style.display = 'none';
-    }
-
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <!-- Floating Telegram -->
+  <a class="floating telegram" href="https://t.me/adrianrs92822" target="_blank" rel="noopener" aria-label="Telegram">
+    <span class="sr">Telegram</span>
+    <svg viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M16 3.038a2 2 0 0 0-2.78-1.86L1.4 5.692a2 2 0 0 0 .08 3.78l3.13 1.09 1.2 3.88a1 1 0 0 0 1.63.46l1.93-1.87 3.78 2.78a2 2 0 0 0 3.16-1.1L16 3.038z"/>
+    </svg>
+  </a>
 
 </body>
 </html>
