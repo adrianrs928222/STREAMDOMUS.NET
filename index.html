@@ -59,15 +59,13 @@ body{
 
 .hero{
   border:1px solid var(--stroke);
-  border-radius:var(--radius);
+  border-radius:18px;
   background:rgba(255,255,255,.03);
   box-shadow:var(--shadow);
   overflow:hidden;
 }
 
-.videoBox{
-  background:#000;
-}
+.videoBox{background:#000}
 
 video{
   width:100%;
@@ -147,7 +145,7 @@ p{color:var(--muted)}
 
 .card{
   border:1px solid var(--stroke);
-  border-radius:var(--radius);
+  border-radius:18px;
   padding:16px;
   text-align:left;
   background:rgba(255,255,255,.03);
@@ -177,14 +175,15 @@ footer{
 
   <section class="hero">
 
-    <!-- VIDEO IA TV + MANDO -->
+    <!-- TEXTO INTRO VIDEO -->
     <div style="padding:12px 0;color:#00ff99;font-weight:900">
       Mira cómo funciona en una TV real con mando
     </div>
 
+    <!-- VIDEO DROPBOX -->
     <div class="videoBox">
       <video controls autoplay muted loop playsinline preload="auto">
-        <source src="./assets/video/videotv.mp4" type="video/mp4">
+        <source src="https://www.dropbox.com/scl/fi/ibhiacd2igse11prgshds/videotv.mp4?rlkey=tje63n2k3rf13leuowm5elnn3&dl=1" type="video/mp4">
         Tu navegador no soporta el video.
       </video>
     </div>
@@ -225,7 +224,7 @@ footer{
       </div>
 
       <p style="margin-top:12px;color:#aaa;font-size:.95rem">
-        Respuesta rápida en horario activo · Activación en minutos
+        Respuesta rápida · Activación en minutos
       </p>
 
     </div>
