@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Términos | StreamDomus</title>
+<meta name="robots" content="index,follow">
+
+<style>
+body{margin:0;font-family:system-ui;background:#050505;color:#fff;line-height:1.6}
+.container{max-width:900px;margin:auto;padding:24px}
+h1,h2{color:#00ff99}
+a{color:#2aa6ff}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>Términos y condiciones</h1>
+
+<h2>Objeto</h2>
+<p>
+Estos términos regulan el acceso y uso de los servicios ofrecidos en este sitio web.
+</p>
+
+<h2>Contratación</h2>
+<p>
+El usuario realiza la solicitud del servicio a través de los canales de contacto indicados.
+</p>
+
+<h2>Pagos</h2>
+<p>
+Los pagos se realizan de forma previa a la activación del servicio.
+</p>
+
+<h2>Uso correcto</h2>
+<p>
+El usuario se compromete a no hacer un uso indebido o ilegal del servicio.
+</p>
+
+<h2>Modificaciones</h2>
+<p>
+El titular puede modificar estos términos en cualquier momento.
+</p>
+
+<p><a href="index.html">Volver al inicio</a></p>
+
+</div>
+</body>
+</html>
