@@ -4,139 +4,121 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>StreamDomus | Servicio digital en España</title>
-<meta name="description" content="Acceso rápido a servicio digital, activación sencilla y soporte directo en España.">
+<title>Servicio digital en España | Acceso rápido y soporte online</title>
+
+<meta name="description" content="Servicio digital en España con activación rápida, acceso desde cualquier dispositivo y soporte directo.">
 <meta name="robots" content="index,follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Servicio digital en España | StreamDomus">
+<meta property="og:description" content="Acceso rápido, soporte directo y uso en múltiples dispositivos.">
+<meta property="og:type" content="website">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://adrianrs928222.github.io/STREAMDOMUS.NET/">
 
 <style>
 :root{
   --bg:#050505;
-  --stroke:#1f1f1f;
   --fg:#ffffff;
-  --muted:#cfcfcf;
+  --muted:#bdbdbd;
   --accent:#00ff99;
-  --accent2:#2aa6ff;
-  --radius:18px;
-  --shadow:0 20px 45px rgba(0,0,0,.55);
+  --stroke:#1f1f1f;
 }
 
 *{box-sizing:border-box}
 
 body{
   margin:0;
-  font-family:system-ui,Segoe UI,Roboto,Arial;
-  background:
-    radial-gradient(900px 500px at 50% 0%, rgba(0,255,153,.08), transparent 55%),
-    radial-gradient(900px 500px at 90% 10%, rgba(42,166,255,.08), transparent 55%),
-    var(--bg);
+  font-family:system-ui,Arial;
+  background:var(--bg);
   color:var(--fg);
 }
 
 .container{
-  max-width:980px;
+  max-width:1000px;
   margin:auto;
-  padding:22px;
-  text-align:center;
+  padding:20px;
 }
 
+/* HEADER */
 .topbar{
   display:flex;
   justify-content:space-between;
-  margin:10px 0 20px;
+  align-items:center;
+  margin-bottom:15px;
+  padding:10px 0;
 }
 
 .brand{
   font-weight:900;
-  display:flex;
-  gap:10px;
-  align-items:center;
+  letter-spacing:1px;
 }
 
-.brandDot{
-  width:12px;height:12px;border-radius:50%;
-  background:linear-gradient(135deg,var(--accent),var(--accent2));
+.topbar a{
+  color:#aaa;
+  margin-left:10px;
+  text-decoration:none;
+  font-weight:700;
 }
 
+.topbar a:hover{
+  color:var(--accent);
+}
+
+/* HERO */
 .hero{
   border:1px solid var(--stroke);
-  border-radius:18px;
-  background:rgba(255,255,255,.03);
-  box-shadow:var(--shadow);
+  border-radius:16px;
   overflow:hidden;
+  background:#0b0b0b;
 }
-
-.videoBox{background:#000}
 
 video{
   width:100%;
   display:block;
 }
 
-.heroContent{
+.content{
   padding:20px;
 }
 
 h1{
-  font-size:clamp(28px,3vw,44px);
-  margin:10px 0;
+  font-size:2rem;
+  margin-bottom:10px;
 }
 
-p{color:var(--muted)}
-
-.badges{
-  display:flex;
-  justify-content:center;
-  gap:10px;
-  flex-wrap:wrap;
-  margin:15px 0;
-}
-
-.badgePrice{
-  padding:10px 16px;
-  border-radius:999px;
-  background:rgba(0,255,153,.12);
-  border:1px solid rgba(0,255,153,.35);
+h2{
   color:var(--accent);
-  font-weight:900;
+  margin-top:25px;
 }
 
-.badgeNote{
-  padding:10px 14px;
-  border-radius:999px;
-  border:1px solid var(--stroke);
-}
-
-.ctaBox{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-  margin-top:12px;
+p{
+  color:var(--muted);
+  line-height:1.6;
 }
 
 .btn{
-  padding:12px;
-  border-radius:14px;
+  display:inline-block;
+  margin-top:10px;
+  padding:12px 16px;
+  border-radius:12px;
+  font-weight:800;
   text-decoration:none;
-  font-weight:900;
-  color:white;
-  display:block;
 }
 
-.btnPrimary{
+.btn-whatsapp{
   background:rgba(0,255,153,.15);
-  border:1px solid rgba(0,255,153,.35);
+  border:1px solid rgba(0,255,153,.4);
+  color:var(--accent);
 }
 
-.btnSecondary{
-  background:rgba(42,166,255,.12);
-  border:1px solid rgba(42,166,255,.35);
-}
-
+/* GRID */
 .grid{
   display:grid;
   grid-template-columns:1fr;
-  gap:14px;
-  padding:18px;
+  gap:15px;
+  margin-top:20px;
 }
 
 @media(min-width:900px){
@@ -145,120 +127,110 @@ p{color:var(--muted)}
 
 .card{
   border:1px solid var(--stroke);
-  border-radius:18px;
-  padding:16px;
-  text-align:left;
-  background:rgba(255,255,255,.03);
+  padding:15px;
+  border-radius:16px;
+  background:#111;
 }
 
-ul{padding-left:18px}
-
+/* FOOTER */
 footer{
-  margin-top:20px;
-  color:#888;
+  margin-top:30px;
+  text-align:center;
+  color:#777;
   font-size:.9rem;
 }
+
+footer a{
+  color:#aaa;
+  text-decoration:none;
+  margin:0 8px;
+}
+
+footer a:hover{
+  color:var(--accent);
+}
 </style>
+
 </head>
 
 <body>
 
 <div class="container">
 
+  <!-- HEADER + MENU -->
   <div class="topbar">
-    <div class="brand">
-      <div class="brandDot"></div>
-      STREAMDOMUS
+    <div class="brand">STREAMDOMUS</div>
+
+    <div>
+      <a href="./index.html">Inicio</a>
+      <a href="./aviso-legal.html">Legal</a>
+      <a href="./terminos.html">Términos</a>
+      <a href="./politica-privacidad.html">Privacidad</a>
+      <a href="./reembolsos.html">Reembolsos</a>
     </div>
-    <div style="color:#aaa;font-weight:700">Soporte directo</div>
   </div>
 
+  <!-- HERO -->
   <section class="hero">
 
-    <!-- TEXTO INTRO VIDEO -->
-    <div style="padding:12px 0;color:#00ff99;font-weight:900">
-      Mira cómo funciona en una TV real con mando
-    </div>
+    <!-- VIDEO -->
+    <video controls autoplay muted loop playsinline>
+      <source src="https://www.dropbox.com/scl/fi/ibhiacd2igse11prgshds/videotv.mp4?rlkey=tje63n2k3rf13leuowm5elnn3&dl=1" type="video/mp4">
+    </video>
 
-    <!-- VIDEO DROPBOX -->
-    <div class="videoBox">
-      <video controls autoplay muted loop playsinline preload="auto">
-        <source src="https://www.dropbox.com/scl/fi/ibhiacd2igse11prgshds/videotv.mp4?rlkey=tje63n2k3rf13leuowm5elnn3&dl=1" type="video/mp4">
-        Tu navegador no soporta el video.
-      </video>
-    </div>
+    <div class="content">
 
-    <div class="heroContent">
-
-      <h1>Accede a tu servicio digital en minutos</h1>
+      <h1>Servicio digital en España con acceso rápido</h1>
 
       <p>
-        Activación rápida, soporte directo y funcionamiento en cualquier dispositivo.
+        Servicio digital diseñado para ofrecer acceso sencillo, rápido y compatible con múltiples dispositivos,
+        con soporte directo durante el proceso de activación.
       </p>
 
-      <div class="badges">
-        <div class="badgePrice">Pago único: 50€</div>
-        <div class="badgeNote">Sin suscripción</div>
-      </div>
+      <a class="btn btn-whatsapp"
+         href="https://wa.me/34642425345?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20servicio"
+         target="_blank">
+        Contactar por WhatsApp
+      </a>
 
-      <p style="color:#ddd">
-        ✔ Activación rápida<br>
-        ✔ Soporte durante el proceso<br>
-        ✔ Compatible con móvil, TV y PC
+      <h2>Cómo funciona</h2>
+      <p>
+        Contactas por WhatsApp o Telegram, recibes instrucciones y accedes al servicio en pocos pasos.
       </p>
 
-      <div class="ctaBox">
+      <h2>Características</h2>
+      <div class="grid">
 
-        <a class="btn btnPrimary"
-           href="https://wa.me/34642425345?text=Hola%2C%20quiero%20activar%20el%20servicio%20de%2050%E2%82%AC"
-           target="_blank">
-          Empezar por WhatsApp
-        </a>
+        <div class="card">
+          ✔ Acceso rápido<br>
+          ✔ Soporte directo<br>
+          ✔ Uso en varios dispositivos
+        </div>
 
-        <a class="btn btnSecondary"
-           href="https://t.me/adrianrs92822"
-           target="_blank">
-          Hablar por Telegram
-        </a>
+        <div class="card">
+          ✔ Instalación guiada<br>
+          ✔ Experiencia sencilla<br>
+          ✔ Atención personalizada
+        </div>
 
       </div>
 
-      <p style="margin-top:12px;color:#aaa;font-size:.95rem">
-        Respuesta rápida · Activación en minutos
+      <h2>Dispositivos compatibles</h2>
+      <p>
+        Smart TV, Android TV, TV Box, móviles Android y ordenadores compatibles.
       </p>
-
-    </div>
-
-    <div class="grid">
-
-      <div class="card">
-        <h2>Qué obtienes</h2>
-        <ul>
-          <li>✔ Acceso digital listo para usar</li>
-          <li>✔ Calidad estable en dispositivos</li>
-          <li>✔ Configuración guiada paso a paso</li>
-          <li>✔ Soporte directo</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>Cómo funciona</h2>
-        <ul>
-          <li>1. Contactas por WhatsApp o Telegram</li>
-          <li>2. Recibes instrucciones</li>
-          <li>3. Accedes en minutos</li>
-        </ul>
-      </div>
 
     </div>
 
   </section>
 
+  <!-- FOOTER -->
   <footer>
     © <span id="y"></span> StreamDomus ·
-    <a href="aviso-legal.html">Aviso legal</a> ·
-    <a href="terminos.html">Términos</a> ·
-    <a href="reembolsos.html">Reembolsos</a>
+    <a href="./aviso-legal.html">Aviso legal</a>
+    <a href="./terminos.html">Términos</a>
+    <a href="./politica-privacidad.html">Privacidad</a>
+    <a href="./reembolsos.html">Reembolsos</a>
   </footer>
 
 </div>
